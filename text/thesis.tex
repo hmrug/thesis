@@ -1,0 +1,100 @@
+%  Create an article
+\documentclass[12pt]{article}
+% Packages
+\usepackage[title]{appendix}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} % set page margins automatically 
+\usepackage[parfill]{parskip} % no indentation and space between paragraphs
+\usepackage{amsmath, blindtext, graphicx, hyperref, booktabs, xcolor}
+\graphicspath{ {../resources/figures/} }
+% Bibliography setup
+\usepackage{natbib}
+\bibliographystyle{abbrvnat}
+\setcitestyle{authoryear,round} %Citation-related commands
+
+\begin{document}
+
+% Title page, toc, and abstract
+\begin{titlepage}
+  \noindent\includegraphics[width=5cm]{uzh_logo_e_pos.pdf}
+  \noindent{\bf Department of Banking and Finance}
+  \noindent\rule{\textwidth}{0.4pt}
+  \vspace{1cm}
+  \begin{center}
+    \LARGE MASTER'S THESIS \\
+    \vspace{1cm}
+    {\Large \emph{Scarcity channel of Quantitative Easing:\\
+    Examining the Overnight Treasury Repo Market in the US \\}}
+    \vspace{2cm}
+    {\large \underline{AUTHOR} \\} 
+    \vspace{0.3cm}
+    {\LARGE Hubert Mrugala \\}
+    \vspace{0.3cm}
+    {\large 19764265 \\}
+    \vspace{0.3cm}
+    {\large hubert.mrugala@uzh.ch \\}
+    \vspace{2cm}
+    {\large \underline{SUPERVISOR} \\} 
+    \vspace{0.3cm}
+    {\LARGE Prof. Dr. Kjell G. Nyborg\\}
+    \vspace{0.3cm}
+    {\large Professor of Finance \\}
+    \vspace{4 cm}
+    {\large 26.03.2022, \textcolor{red}{Draft}}
+  \end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% Text
+
+\section{Introduction}
+
+\section{Literature}
+
+\section{Collateral shortage in 2021}
+
+\section{Determinants of a collateral spread}
+
+\section{Empirical}
+
+\subsection{Data and variables}
+
+\subsection{Methodology}
+
+\subsection{Empirical Results}
+
+\section{Conclusions}
+a
+
+% Bibliography and Appendices
+\newpage
+
+\begin{appendices}
+\addtocontents{toc}{\setcounter{tocdepth}{1}}
+   \section{Tables}
+   \section{Figures}
+   \section{Data and Code}
+\end{appendices}
+% \begin{figure}[!htb]
+%     \centering
+%     \includegraphics[width=0.9\linewidth]{spreads.pdf}
+%     \caption{Interest rate swap spreads of different maturities. 5 day moving average. \\Vertical lines: Lehman collapse and introduction of central clearing for IRS} %\autocite{Fujita2019}
+%     \label{fig:spreads}
+% \end{figure}
+% 
+% \begin{figure}[!htb]
+%     \centering
+%     \includegraphics[width=0.75\linewidth]{structure.png}
+%     \caption{Plain vanilla interest rate swap structure \citep{tdeconomics2016}.} 
+%     \label{fig:structure}
+% \end{figure}
+
+\newpage 
+
+\addcontentsline{toc}{section}{References}
+\bibliography{proposal_refs}
+
+\end{document}

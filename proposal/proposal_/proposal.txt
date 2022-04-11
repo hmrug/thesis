@@ -1,0 +1,148 @@
+## Motivation
+
+ Scarcity channel is one of the least studied effects of central bank (CB) large asset purchases. It is plausible that quantitative easing programs, by decreasing the supply of treasuries, increase scarcity of assets that have been bought by the central bank. Apart from possible price distortions on treasury markets, scarce treasury securities can also have an impact on the collateral intermediation complex of repo markets. Investigating central bank purchases of assets in relation to their collateralization function may in fact be more relevant for monetary policy transmission than studying any other QE channel.
+
+After 20 years of QE programs in developed economies, balance sheet expansion have proved to be an ineffective way of generating inflation and stimulating the economy **[Fig. 1]**. If, in Jay Powells words, "flooding the system with dollars", does not have real economic effects, can draining the system of high-quality collateral have an impact on the economy? Swapping reserves for low-haircut collateral may be detrimental to current monetary situation, even causing disinflation. To figure out whether CB purchase programs have real negative side effects, it is necessary to first establish or disprove the connection between QE and repo rates. Does reduced supply of high-quality collateral have an effect on repo rates? A significant negative relationship between CB balance sheet expansion and repo rates would suggest that the central bank amplifies collateral shortage and creates higher searching costs of the bought assets. Existing of such mechanism would confirm scarcity effects of the QE. Secondly, given the scarcity channel were proven, understanding and further research in the field of collateral intermediation could link the possible collateral deficiency to the real economy. The work suggested in this proposal would aim at determining the relationship between growth of specific positions on the central bank balance sheet and the repo rates secured by that specific set of assets. The current understanding of the collateral agency found in the literature would be used to describe the environment in which scarcity channel may function and emphasize the importance of the subject.
+
+Aside from all reasons that indicate the significance of the matter, the time for studying this effect is also very appropriate. In the case of the U.S., we have now over 10 years of data on quantitative easing and tightening. Furthermore, recent 2020 crisis have prompted the FED to buy an unprecedented amount of long-term and short-term Treasuries. Short-term Treasuries are especially important as QE before September 2019 wouldn't include a lot of these and at the same time short-term treasuries are most favored in the repo markets. Last but not least, we can study how the FED's Reverse Repo Facility has been influencing the repo markets and possibly alleviating the collateral shortage.
+
+## Literature
+
+Significant literature that has a considerable connection to the proposed research can be divided into three categories.
+
+The first one is the prior work on central bank policy in relationship to collateral scarcity. **D'amico et al. (2014)** give an evidence of QE scarcity channel in the US by investigating supply and demand factors of Treasury SC repo rate. **Arrata et al. (2020)** find that the same phenomenon exist in the European SC repo markets, where PSPP has been reducing repos secured by individual EU countries debt. Furthermore, it's been documented that BoJ purchases of Japanese Govenment Bonds in QE and then QQE programs have negative impact on market liquidity, which suggest scarcity effects **(Han and Senevirante 2018)**.
+
+The second category is the literature on repo market rates and cash market rates of US Treasuries. The work of **Duffie (1996)** introduced a model that shows how short-selling Treasuries obtained by reverse-repo transactions can create squezes at delivery dates and so, cause some repos trading on special. **Mark Fisher** gives a nice example of how this often happens. Dealers short Treasuries, usually the kinds that show highest liquidity, to hedge their trading activities. At the same time, reverse-repo transaction (receiving collateral at initiation) is the most cost-effective way of getting necessary Treasuries. The result of this, is that the demand for these specific securities in the repo market rises substantially, while the supply is not sufficiently elastic. Hence, low special repo rates. Special repo rates are not planned to be studied in the proposed research, though the literature of this kind gives insight into supply-demand dynamics in the market. US Treasury securities are special as a whole asset group. Just like in the case of the repo spread[^2] that determines the specialness of repos with specific Treasury collateral, Treasuries overall have a non-default component that makes them exceptional on their own **(Krishnamurty and Vissing-Jorgensen 2012)**.
+
+In the Eurozone, repo markets are driven mainly by agents that seek collateral and not funding (**Shaffner et al. 2019**). Also, counterparty risk constrains make the quality of collateral in bilateral transactions crucial. If the collateral pledged is not safe or liquid enough, contracts will often be not agreed on **(Ewerhart and Tapking 2008**). After all, collateral side of the repo market may be more important than the financing side, which gives more arguments to study the effect of the central bank purchases on the repo market.
+
+The last branch of literature is concerned with the collateral supply and its intermediation. **Singh and Stella (2012)** introduce and  explain a phenomenon of "collateral-chains". Dealer banks get primary collateral**3** from hedge funds and securities lending custodians to use that collateral for their own purposes by repledging it (rehypothecation). This means that large banks will source the collateral from non-banks and pledge it in another transaction, then another bank receiving that particular collateral can also re-use it, and so a collateral-chain is created. A re-use rate, or velocity, of collateral shows how many times a source collateral has been pledged. **Singh (2017)** reports that the collateral reuse rate in 2007 was 3.0 and then it was continuously dropping to 1.8 in 2015. **Jank et al. (2020)** found a positive relationship between ECB bond purchases (PSPP) and the reuse rate of collateral suggesting that the market participants adjust to shocks in collateral scarcity by utilizing more the source collateral.
+
+## Institutional setting
+
+Collateral scarcity significantly affects the real economy. As explained in **Singh and Stella (2012)**, money-like attributes of high-quality collateral allow it to be used just like money. Furthermore, this kind of collateral is often preferred to money as it yields a real non-negative interest. A shadow banking system by creating and transferring collateral induce non-bank lending that impact the real economy. Even the re-use rate of collateral stands in parallel to the traditional bank money multiplier. Global monetary picture still lacks understanding of collateral. It is reflected in the financial media that talks only of how quantitative easing is loosening the banking system conditions and makes economy "red hot". Academic literature also focuses  on every QE transmission but the scarcity channel. How come central bank purchases are associated only with reserves abundance, but collateral-draining is very rarely mentioned. One reason the great financial crisis of 2008 was so great is because a large pool of collateral was destroyed. We need more research into less explored effects of QE to determine whether it is worth to continue doing it, given the potential negative side effects it creates in form of collateral shortage. This research would investigate this negative effects in the novel context of collateral intermediation with recent data that hasn't been used before.
+
+## Thesis
+
+An empirical investigation into the relationship between GC Treasury repo rates and Fed's Treasury purchases would be the main subject of this research. If Fed's purchases of Treasuries are associated with lower repo rates, then this result would suggest an existence of a scarcity channel of QE.
+
+Apart from the mentioned literature, there is some recent 2021 data that suggest collateral scarcity. Ever since the Fed opened a overnight reverse repo standing facility, money has been continuously piling in that facility initially paying 0.0%, and then, since 16 June 2021, 0.05%. As of today, 1.5 trillion of dollars has been lent to the Fed at 5 bps, or looking from another angle, the Fed lends the money funds and dealers $1.5 trillion of short term treasuries overnight.
+
+One explanation of Fed's RRP facility reaching such high numbers is that money market funds rotated out of Treasury bills to RRP, which now often yields 1-2 bps more than T-bills. There are a few things about this rebalancing that are puzzling though. First, sell-off of lower yielding T-bills would eventually bring and floor them to the level of ON RRP, which is 5 bps. Credit Suisse analyst Zoltan Pozsar calculated that this would happen when RRP facility reaches 1.3 trillion, yet in December RRP facility exceeded 1.7 trillion and 1-month T-bills were below 0.05 for almost the whole month. Moreover, why would the front-end of Treasuries trade so low for so long when the Fed puts a floor on T-bills and every Treasury security yield of maturity higher than 3 months went considerably higher in the second half of 2021.
+
+All this seems to indicate that there is a shortage of short-term Treasury bills and not an excess of liquidity. Even Jay Powell said that it is the case during his testimony to House committee. https://www.youtube.com/watch?v=7422XDSI8Ew
+
+By using GC Treasury repo data and some other market and balance sheet data (Fed and banks), we can empirically test the hypothesis of the US central bank creating a collateral scarcity by conducting asset purchases programs.
+
+## Data and the Research Design
+
+The idea is to use test causality with a simple OLS regression. Weighted Average Treasury GC repo rate would be regressed on the amount of Treasuries held at the Fed and other significant macro variables, including a variable that represents a level of banks' off-balance sheet collateral permitted to be repledged. To make a time-series regression meaningful, all variables will be taken in a first difference form to make sure the data is stationary.
+
+The dataset contains many variables. The frequency ranges from daily to quarterly, so the more variables, the less frequent observations can be. Observation period is from the beginning of 2008 to the end of 2021.
+
+#### Variables
+
+**GCF_Repo** is a DTCC GCF repo index that measures the weighted average General Collateral Finance repo rate for the most traded collateral, which is Treasuries with maturity of less than 30-years (CUSIP: 371487AE9). Only overnight transactions. The dataset is free and comes from DTCC Solutions LLC.
+
+**TREAST** is the amount of all U.S. Treasury Securities held at the FED, source: FRED.
+
+**Debt** is the nominal value of the marketable U.S. debt. The data has been cleared to include only Treasury bills, notes and bonds. Source: fiscaldata.treasury.gov, U.S. Treasury Monthly Statement of the Public Debt (MSPD).
+
+**TREAST/Debt** is the ratio of U.S. Treasury Securities held at the FED and the value of T-bills, notes and bonds combined.
+
+**RRPONTSYD** is the amount of Treasury Securities sold by the Fed through the overnight reverse repo standing facility, source: FRED.
+
+**GS** is the amount of collateral permitted to be repledged by Goldman Sachs. The data comes from 10-Q reports of the bank.
+
+**T10Y2Y** is the spread between 10-year and 2-year Treasury note yield, a variable for yield curve, which is an indicator of a business cycle. Source: FRED.
+
+**ONLIBOR** is the overnight LIBOR rate in USD. Source: FRED.
+
+**FEDUT** is the upper Fed funds rate target. Source: FRED.
+
+**FEDUT-Repo** is the spread between the upper Fed funds rate target and the DTCC GCF repo rate. Source: FRED.
+
+#### Repledging variable
+
+When banks enter a (reverse) repo transactions, collateral that they receive can often be rehypocated (repledged) further to another institutions. When this is the case, the borrower of the collateral has rights to re-use that collateral for his own purposes, for example to use that collateral in an another repo transaction for the time of his re-use rights to that collateral. Collateral received in this way does not give the full owning rights to the borrower though, so such security is an off-balance sheet item. Large banks report "received collateral that was permitted to repledge" in their 10-Q and 10-K notes, so the data is available quarterly. By summing up this item across all dealer banks we can get a measure of total pledgeable collateral with banks from all sources.
+
+The metric is not perfect because it gives no information on what proportion of that pool of pledgeable collateral is the source collateral that initiated all rehypopothecation activities. Nevertheless, the distinction is not crucial for this investigation. Ultimately what matters is the amount of the total off-balance sheet collateral that the shadow banking system creates. More collateral creation by the system should make it less scarce and thus push repo rates down. On the other hand, though, higher re-use rates (all repledgable collateral divided by source collateral) has been linked with collateral scarcity in the Eurozone **(Jank 2020)**. It is possible that when the system is faced with collateral shortage issues, banks rehypothecate the source collateral more times pushing up the re-use rates. While increase in re-use rates may be associated with lower repo rates, the notional values of collateral, i.e. the data that I have available, should be associated with higher repo rates, as more off-balance sheet collateral in the market makes it more abundant.
+
+The data I got for now is the received collateral permitted to repledge by only one bank - Goldman Sachs. However, all dealer banks report this item and the plan is to sum them all up at least for the following banks: JP Morgan, Morgan Stanley, Goldman Sachs, Bank of America, Citi. It is also possible to include the data from: Deutsche, Credit Suisse, UBS, Barclays, RBS, Nomura.
+
+#### The Data
+
+Figure 4 shows a time-series plot of Treasuries held at the Fed, Fed's sales of Treasuries through RRP facility and collateral of Goldman Sachs that is permitted to be repledged. The repleding variable seems to correlate with periods of "collateral crunches" in the market. First, there is the Global Financial Crisis, in which a large part of safe collateral vaporized from the market. Then, there is a significant rise in repledging during 2018-19. September 2019 is infamous of the repo breakdown, but in 2018 there was also one event that is closely related to scarce collateral that happened in May, when US notes and bonds of every maturity dropped 15-30 bps depending on maturity. Lastly, year 2020 and 2021 experienced highest QE ever, and also highest repledgable off-balance sheet collateral received (at least by Goldman Sachs). Unsurprisingly, repo rates constantly fall between mid-2020 and June 2021, until the day of Fed's introduction of 5 bps RRP standing facility [figure 5]. Since 16 June 2021, Fed was selling more and more Treasures, which helped to keep repo rates in the range of 4-6 bps, yet there were still days where the rate would drop to 3 or even 2 bps, as it was the case on 20th October.
+
+Figure 6 shows the GFC repo rate and Fed funds rate upper target. The lower the GFC repo rate, the lower the price banks are willing to lend money for Treasury securities. Normally, GFC repo rate should be lower than fed funds rate or LIBOR rate, because repo transactions are secured, and thus safer. Nevertheless, a big spread between Fed's target rate or an unsecured banking rate, like LIBOR, and repo rate could suggest, that collateral is in high demand relative to its supply.
+
+#### Some regressions
+
+Variales with "D_" at the beginning mean that the variable is in the first difference form. The purpose of such transformation is to make the time series stationary.
+
+Dependent variable is the change in repo rate "D_GCF_Repo" or the spread between the fed funds target rate and the repo rate "FEDUT-Repo". The reason for using the latter is, that the spread removes all variability in the repo rate that is caused by the Fed's interest rate policy.
+
+Collateral is more scarce when "D_GCF_Repo" goes down or when "FEDUT-Repo" goes up.
+
+Figure 7 shows the results of the first regression where the depended variable is differenced repo rate and independent variables are differenced Fed's Treasury holdings, marketable debt and collateral received by Goldman Sachs that is permitted to be repledged. It uses quarterly data with 54 observations.
+
+Increases in US Treasuries on Fed's balance sheet are associated with decreases of the repo rate (more scarce collateral), just as expected. This holds for every regression that I have tried with different data frequency and different controls added on to regressions. "D_TREAST" variable is also statistical significant and this is almost always the case. Sometimes when wrong controls are added or when the repo rate variable is not corrected for Fed's interest rate changes, p-values increase.
+
+Although "D_Debt" and "D_GS" variables are not statistically significant, they are economically significant. The results show that, loosely speaking, increases in Treasury supply cause the repo rate to increase (less collateral scarcity) and increases in banks' off-balance sheet collateral also causes the rate to increase. It seems, at least in this regression, that more repledging by banks alleviates to some extend collateral scarcity, which is reasonable.  
+
+Figure 8 shows a slightly different regression that uses the same quarterly data. Dependent variable is changed to "FEDUT-Repo" for reasons already mentioned, Fed's Treasury holdings and US marketable debt variables are combined into one ratio of the two, and the Fed's Treasury sales through RRP standing facility are added. Normally, the wider "FEDUT-Repo" spread is, the lower the repo rate, therefore the coefficients in this regression will be the opposite of ones in the first regression. Meaning, in this regression positive coefficient would suggest scarcity effects, not negative ones. Coefficient of variable "D_Treast/Debt" is positive and significant, which was expected. The other two variables are kind of problematic. Coefficient of "D_GS" is now positive which gives the opposite effect compared to the previous regression. This isn't a big issue since we don't know yet how the final repledgable collateral data would look like. Coefficient of Fed's RRP Treasury Sales variable is also counterintuitive. It is positive, which means that more collateral in the market is associated with lower repo rates, yet it should be the opposite. The last regression, which results are in the Figure 9 shows, though that this is probably due to the sample being too small.
+
+The last regression on figure 9, uses almost the same variables but with monthly frequency. This gives a total of 156 observations. Although, the Fed's RRP variable is still statistically insignificant, it shows a more reasonable result from the economic point of view. Releasing Treasuries to the market decreases the fed-funds-target-repo-rate spread, and thus increases the repo rate, which means that the Treasuries are less scarce. In the regression there is also the "D_T10Y2Y" variable, which is the first difference of Treasury 10s and 2s yields. The variable represents the yield curve and is there to control for the business cycle. The steeper the curve the lower the spread (higher repo rate), that's the relationship in the results and it makes sense, however, the p-value is rather too high, which makes the variable statistically insignificant. Economically, it is an acceptable but not as important as other variables which means that it probably should be dropped due to its low statistical explaining power. Off-balance sheet collateral data is not included as it is reported only on quarterly basis.
+
+## Challenges
+
+The results show that it would be most reasonable to start with the data of monthly frequency, or even the weekly frequency and then use the quarterly frequency data with the repledgable collateral as an extension. While weekly data can be used, there is a problem, that debt figures are available only on the monthly basis, and that inconvenience takes out one important variable.
+
+Another problem would be the choice of control variables. Trying to control for the business cycle with the yield curve or the financing conditions in the interbank market with the overnight LIBOR rate sometimes suddenly pushes up the p-value of every single variable. Control variables must be chosen very carefully.
+
+There would also be a need to add some dummy variables that control for regulatory changes. Fed's RRP facility Treasury sales could also be expressed with a dummy variables.
+
+Finally, it may come out that the repledgeable collateral data does not fit into the regression at all. Intuitively it should fit in, but because each data point is available only once every three months, the regression sample may just be too small to be meaningful.
+
+
+
+---
+
+[^1]: repo is the most effective way of obtaining Treasuries for shorting. 
+[^2]: repo spread is the difference between GC repo rate and SC repo rate for a certain collateral
+
+## Appendix
+
+Figure 1.
+
+![figure 1](res/fig_1.png)
+
+Figure 2.
+
+![figure 1](/home/hmrug/projects/writing/thesis/res/fig_2.png)
+
+Figure 3.![figure 1](/home/hmrug/projects/writing/thesis/res/fig_3.png)
+
+Figure 4. 
+
+![](res/fig_4.png)
+
+Figure 5.
+
+![](res/fig_5.png)
+
+Figure 6.
+
+![ON Repo and Fed's Target](res/fig_6.png)
+
+Figure 7.
+
+![](res/fig_7.png)
+
+Figure 8.
+
+![](res/fig_8.png)
+
+Figure 9.
+
+![](res/fig_9.png)
