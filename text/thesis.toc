@@ -1,13 +1,13 @@
 \babel@toc {british}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {section}{\numberline {2}Mechanics of collateral}{2}{section.2}%
-\contentsline {section}{\numberline {3}Drivers of a collateral spread}{4}{section.3}%
-\contentsline {section}{\numberline {4}Empirical}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Descriptive Statistics}{6}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Methodology}{8}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Base Model}{10}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Extension}{12}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Conclusions}{13}{section.5}%
-\contentsline {section}{\numberline {A}Tables}{16}{appendix.a.A}%
-\contentsline {section}{\numberline {B}Figures}{16}{appendix.a.B}%
-\contentsline {section}{\numberline {C}Data and Code}{16}{appendix.a.C}%
+\contentsline {section}{\numberline {2}Mechanics of collateral}{4}{section.2}%
+\contentsline {section}{\numberline {3}Collateral shortage in years 2020-2022}{8}{section.3}%
+\contentsline {section}{\numberline {4}Empirical tests}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Data}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Empirical tests}{15}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Results}{17}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Extension}{25}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Conclusions}{27}{section.5}%
+\contentsline {section}{Appendix}{}{section*.16}
+\contentsline {section}{Appendix \numberline {A}Tables}{30}{appendix.a.A}%
+\contentsline {section}{Appendix \numberline {B}Second section}{31}{appendix.a.B}%

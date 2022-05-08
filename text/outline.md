@@ -1,4 +1,14 @@
 
+## Approach
+
+- fed balance sheet data is availavle weekly so all data is weekly so specifications are focused on macro factors rather than the microsturcutre of the repo market
+- why use collateral spread?
+- regression equations
+
+
+
+
+
 ## Introduction
 - what is the scarcity channel (focus on colleteral)
 - previous work on scarcity channel
@@ -19,3 +29,11 @@ Figures:
 
 ## Mechanics of collateral
 Before the Global Financial Crisis there were no frictions in the money markets. Money markets were boring, which was good. There was a zoo of liquidity that consisted of private sector liquidity (comercial papers, MBS etc.), public sector liquidity (Treasury collateral) and central bank liquidity (reserves). Now we have only two of those and have to balance their volume. Singh money and collateral.
+
+
+<!-- def csv(df): -->
+<!--     program = "localc"+" " -->
+<!--     file_path = "/tmp/dataframe.csv" -->
+<!--     import os -->
+<!--     df.to_csv(file_path) -->
+<!--     return os.system(program+file_path) -->

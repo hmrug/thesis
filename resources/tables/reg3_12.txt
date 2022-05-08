@@ -1,0 +1,39 @@
+\begin{table}[!htbp] \centering
+\begin{tabular}{@{\extracolsep{5pt}}lcc}
+\\[-1.8ex]\hline
+\hline \\[-1.8ex]
+& \multicolumn{2}{c}{\textit{Dependent variable:}} \
+\cr \cline{2-3}
+\\[-1.8ex] & (1) & (2) \\
+\hline \\[-1.8ex]
+ C(RATE_DOWN)[T.1] & & 36.027$^{***}$ \\
+  & & (7.717) \\
+ C(RATE_UP)[T.True] & & -17.918$^{***}$ \\
+  & & (2.075) \\
+ DEBT & -46.471$^{**}$ & -23.175$^{**}$ \\
+  & (19.259) & (10.291) \\
+ Intercept & 0.914$^{}$ & 0.262$^{}$ \\
+  & (0.621) & (0.298) \\
+ LIBOR & & 0.936$^{***}$ \\
+  & & (0.043) \\
+ RRP & & -30.394$^{**}$ \\
+  & & (13.761) \\
+ SOMA_TREASURY & 16.843$^{}$ & 21.498$^{**}$ \\
+  & (12.801) & (10.825) \\
+ UST_1M & & -64.121$^{***}$ \\
+  & & (11.605) \\
+ VIX & & -0.132$^{}$ \\
+  & & (0.165) \\
+ YIELD_CURVE & & 0.122$^{*}$ \\
+  & & (0.064) \\
+\hline \\[-1.8ex]
+ Observations & 726 & 726 \\
+ $R^2$ & 0.010 & 0.773 \\
+ Adjusted $R^2$ & 0.007 & 0.770 \\
+ Residual Std. Error & 23.053(df = 723) & 11.099(df = 716)  \\
+ F Statistic & 2.911$^{*}$ (df = 2.0; 723.0) & 94.144$^{***}$ (df = 9.0; 716.0) \\
+\hline
+\hline \\[-1.8ex]
+\textit{Note:} & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+\end{tabular}
+\end{table}

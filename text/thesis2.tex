@@ -25,7 +25,9 @@
 \usepackage{datetime} %For the specification of the date.
 %\usepackage{tocloft} %The ToC, LoF and LoT each appear not necessarily on a new page.
 \usepackage{graphicx,listings,xcolor,textcomp} %For the graphics, listings etc.
-\usepackage[margin=10pt, font=small, labelfont=bf, labelsep=endash]{caption} %Customize the captions.
+\usepackage[justification=raggedright,
+            singlelinecheck=false,format=plain,
+            font={large,bf},margin=10pt]{caption} %Customize the captions.
 \usepackage{chngcntr} %To use counterwithout.
 \usepackage{epstopdf} %For inserting .eps files into the document.
 \usepackage{hyperref} %Must be loaded at the end.
@@ -178,7 +180,6 @@ Assistant\\
 \thispagestyle{firststyle}
 \newpage
 
-
 % ----- EXEC SUMMARY AND ABSTRACT ----- 
 \section*{Executive Summary}
 \thispagestyle{firststyle}
@@ -216,17 +217,34 @@ There are many theoretical transmission channels of quantitative easing, however
 
 There is one channel of quantitative easing that is rarely mentioned and insuffitiently studied.\footnote{In financial media, only Izabella Kaminska of FT Alphaville sometimes covered collateral scarcity.}. It is the scarcity channel (or scarcity effects). While most channels on QE focus on abundance of reserves, central bank liquidity, the scarcity effect, puts emphasis on the collateral-side of the swap, which is the public sector liquidity. There are only two academic papers that study the scarcity channel of asset purchases programmes. \citet{damico2014} find that there was a scarcity premium of US Treasury securities traded in the repo market during the time of LSAP programs. Likewise, \citet{arrata2018} determine a similar relationship in the \textbf{Euro zone market for repo contracts}. Both papers prove the existence of the scarcity effects in the US and EU markets, however, those investigations look only at specific special repo markets and don't take into account the mechanics of the collateral intermediation complex. Furthermore, there hasn't been any research done about the scarcity premium of US Treasuries in over eight years, despite an almost constant QE during that period.
 
-This research fills the subject gap, the time gap, and the context gap in the narrow literature on scarcity effects. I use a General Collateral Financing Treasury Repo rate weighted index in a timespan of the last 15 years to test a connection between the level of US Treasury securities on the Fed's balance sheet and the index. [Collateral spread]
+This research fills the subject gap, the time gap, and the context gap in the narrow literature on scarcity effects. I use a General Collateral Financing Treasury Repo rate weighted index in a timespan of the last 15 years to test a connection between the level of US Treasury securities on the Fed's balance sheet and the index. Additionally, to focus completely on the collateral-side of a repo transaction, I use a collateral spread as a dependent variable just like \citet{nyborg2019b} does.
 
 \textbf{[Findings]}
 
-I control for [...] and emphasize the importance of high-quality collateral by describing its dynamics and economic function. Moreover, I add an innovative proxy for the re-use rate of collateral in the banking system.
+I control for \textbf{[...]} and emphasize the importance of high-quality collateral by describing its dynamics and economic function. Moreover, I add an innovative proxy for the re-use rate of collateral in the banking system as an extension of the base model.
 
-The research connects three different strains of literature... 
+The research connects three different strains of literature, which are research on collateral scarcity, repo markets and collateral intermediation.
+
+Apart from already mentioned academic papers on scarcity effects, there is also one investigation of the Japanse JGB market that contributes to the literature on collateral scarcity. \han{2018} have documented that BoJ purchases of Japanese Government Bonds in QE and then QQE programs have negative impact on market liquidity, which suggest scarcity effects.
+
+The second category is the literature on repo market rates and cash market rates of US Treasuries. The work of Duffie (1996) introduced a model that shows how short-selling Treasuries obtained by reverse-repo transactions can create squeezes at delivery dates and so, cause some repos to trade on special. Mark Fisher (2002) gives a nice example of how this often happens. Dealers short Treasuries, usually the kinds that show highest liquidity, to hedge their trading activities. At the same time, reverse-repo transaction (receiving collateral at initiation) is the most cost-effective way of getting necessary Treasuries. The result of this, is that the demand for these specific securities in the repo market rises substantially, while the supply is not sufficiently elastic. Hence, low special repo rates. Special repo rates are not planned to be studied in the proposed research, though the literature of this kind gives insight into supply-demand dynamics in the market. Moreover, US Treasury securities are special as a whole asset group. Just like in the case of the repo spread that determines the specialness of repos with specific Treasury collateral, Treasuries overall have a non-default component that makes them, in general, exceptional on their own (Krishnamurty and Vissing-Jorgensen 2012).
+
+In the Euro area, repo markets are driven mainly by agents that seek collateral and not funding (Shaffner et al. 2019). Also, counterparty risk constrains make the quality of collateral in bilateral transactions crucial. If the collateral pledged is not safe or liquid enough, contracts will often be not agreed on (Ewerhart and Tapking 2008). After all, collateral side of the repo market may be more important than the financing side, which gives more arguments to study the effect of the central bank purchases on the repo market.
+
+The last branch of literature is concerned with the collateral supply and its intermediation. Singh and Stella (2012) introduce and explain a phenomenon of "collateral-chains". Dealer banks get “source collateral” from hedge funds and securities lending custodians to use that collateral for their own purposes by repledging it (rehypothecation). This means that large banks will source the collateral from non-banks and pledge it in another transaction, then another bank receiving that particular collateral can also re-use it, and so a collateral-chain is created. A re-use rate, or velocity, of collateral shows how many times a source collateral has been pledged. Singh (2017) reports that the collateral re-use rate in 2007 was 3.0, and then it was continuously dropping to 1.8 \in 2015. Jank et al. (2020) found a positive relationship between ECB bond purchases (PSPP) and the re-use rate of collateral suggesting that the market participants adjust to shocks in collateral scarcity by utilizing more the source collateral.
 
 This study is important because...
 
 The remainder of the paper is organized as follows. 
+
+
+\begin{figure}[htb!]
+  \begin{center}
+    \caption{Fed's Balance Sheet and 10-year US Treasury Yield}
+    \includegraphics[width=0.99\linewidth]{fed_bs.pdf}
+  \end{center}
+  \label{Feds_BS}
+\end{figure}
 
 
 % Scarcity channel is one of the least studied effects of central bank large asset purchases. It is plausible that quantitative easing programs, by decreasing the supply of Treasuries, increase scarcity of these securities in the market, especially in the repo market. There has been some research done on scarcity channel by determining relationship between central bank asset purchases and special repo rates (Arrata et al., 2018; D'amico et al., 2014). The authors of both papers use a very detailed repo data to test the hypothesis of a central bank induced collateral shortage, however they don’t take into the account the mechanics of the collateral intermediation complex. Jank et al. (2020) look into the dynamics of the shadow banking system in the and link the re-use rate of collateral to the supply of collateral and repo rates in the Euro area. Nevertheless, there still is no evidence of the scarcity channel in US Treasury repo market, that considers off-balance sheet collateral creation. This research would investigate effects of quantitative easing in jjjjkthe US on the Treasury General Collateral repo rate, with the help of bank’s repledgedable collateral data that represents augmented “supply” of repo collateral endogenously created by the banking system itself.
@@ -267,6 +285,7 @@ The remainder of the paper is organized as follows.
 \lipsum
 
 \subsection{Extension}
+
 
 \lipsum
 
