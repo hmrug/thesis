@@ -61,7 +61,7 @@ df = pd.read_csv("data/fetched_data.csv",
                  index_col="Date")
 df.index = pd.to_datetime(df.index)
 
-# Vix
+# VIX
 vix = pdr.DataReader('^VIX','yahoo',start_date,end_date)['Adj Close']\
                 .resample("W-WED").first()\
                 .rename("VIX")
@@ -83,8 +83,6 @@ ofr_st = ofr_st * 100
 ofr_st.index = pd.to_datetime(ofr_st.index)
 ofr_st = ofr_st.resample("W-WED").first()
 
-# df = pd.concat([df,ofr_st],axis=1)
-
 # Add bid-ask data
 bidask = pd.read_excel("data/bid_ask_data.xlsx",
                        header=1,index_col="Date")\
@@ -93,6 +91,8 @@ bidask = pd.read_excel("data/bid_ask_data.xlsx",
                 .loc[start_date:end_date]\
                 .resample("W-WED").first()
 bidask.index = pd.to_datetime(bidask.index)
+bidask["UST10Y_10W_VOL"] = hist_vol(bidask["UST10Y_MID"])
+bidask["UST3M_10W_VOL"] = hist_vol(bidask["UST3M_MID"])
 # All rates in basis points
 bidask = bidask * 100
 
@@ -213,7 +213,7 @@ df["FED_TIGHTENING"] =  fed_tightening_df.astype("bool")
 ddf["FED_TIGHTENING"] =  df["FED_TIGHTENING"]
 
 # --- OLS specifications --- 
-n_lag = int(725**(1/4))
+n_lag = int(726**(1/4))
 
 # 1_1: Base
 spec11 = ols("REPO_TREASURY ~\
@@ -230,7 +230,6 @@ spec12 = ols("REPO_TREASURY ~\
                 DEBT +\
                 RRP +\
                 UST_1M +\
-                VIX +\
                 YIELD_CURVE +\
                 C(RATE_DOWN) +\
                 C(RATE_UP)",
@@ -239,106 +238,165 @@ spec12 = ols("REPO_TREASURY ~\
 res12 = spec12.summary()
 res12
 
-# 1_3: Add Fed QE dates
+# 1_3: Add LIBOR
 spec13 = ols("REPO_TREASURY ~\
                 SOMA_TREASURY +\
                 DEBT +\
                 RRP +\
-                YIELD_CURVE +\
-                VIX +\
                 UST_1M +\
+                YIELD_CURVE +\
+                LIBOR +\
                 C(RATE_DOWN) +\
-                C(RATE_UP) +\
-                C(FED_EASENING) +\
-                C(FED_TIGHTENING) +\
-                LIBOR",
+                C(RATE_UP)",
             data=ddf,missing='drop',hasconst=True)\
                 .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
 res13 = spec13.summary()
 res13
 
-# 2: Bills only
-spec2 = ols("GCF_TREASURY ~\
+# 1_4: Add VIX and Fed dates
+spec14 = ols("REPO_TREASURY ~\
+                SOMA_TREASURY +\
+                DEBT +\
+                RRP +\
+                UST_1M +\
+                YIELD_CURVE +\
+                LIBOR +\
+                VIX +\
+                C(RATE_DOWN) +\
+                C(RATE_UP) +\
+                C(FED_EASENING) +\
+                C(FED_TIGHTENING)",
+            data=ddf,missing='drop',hasconst=True)\
+                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
+res14 = spec14.summary()
+res14
+
+# 2_1: Collateral Spread Specfication
+spec21 = ols("COLLATERAL_SPREAD ~\
+                SOMA_TREASURY +\
+                DEBT",
+            data=ddf,missing='drop',hasconst=True)\
+                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
+res21 = spec21.summary()
+res21
+
+# 2_2: Add significant variables
+spec22 = ols("COLLATERAL_SPREAD ~\
+                SOMA_TREASURY +\
+                DEBT +\
+                RRP +\
+                UST_1M +\
+                YIELD_CURVE +\
+                LIBOR +\
+                C(RATE_DOWN) +\
+                C(RATE_UP)",
+            data=ddf,missing='drop',hasconst=True)\
+                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
+res22 = spec22.summary()
+res22
+
+# 2_3: Add VIX and Fed dates
+spec23 = ols("COLLATERAL_SPREAD ~\
+                SOMA_TREASURY +\
+                DEBT +\
+                RRP +\
+                UST_1M +\
+                YIELD_CURVE +\
+                LIBOR +\
+                VIX +\
+                C(RATE_DOWN) +\
+                C(RATE_UP) +\
+                C(FED_EASENING) +\
+                C(FED_TIGHTENING)",
+            data=ddf,missing='drop',hasconst=True)\
+                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
+res23 = spec23.summary()
+res23
+
+# 2_4: Add PD Fails
+spec24 = ols("COLLATERAL_SPREAD ~\
+                SOMA_TREASURY +\
+                DEBT +\
+                RRP +\
+                UST_1M +\
+                YIELD_CURVE +\
+                LIBOR +\
+                C(RATE_DOWN) +\
+                C(RATE_UP) +\
+                PD_FAILS",
+            data=ddf,missing='drop',hasconst=True)\
+                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
+res24 = spec24.summary()
+res24
+
+# 2_5: Add 3M UST Vol
+spec25 = ols("COLLATERAL_SPREAD ~\
+                SOMA_TREASURY +\
+                DEBT +\
+                RRP +\
+                UST_1M +\
+                YIELD_CURVE +\
+                LIBOR +\
+                C(RATE_DOWN) +\
+                C(RATE_UP) +\
+                UST3M_10W_VOL",
+            data=ddf,missing='drop',hasconst=True)\
+                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
+res25 = spec25.summary()
+res25
+
+# 2_6: Add UST 3M Bid-Ask Spread
+spec26 = ols("COLLATERAL_SPREAD ~\
+                SOMA_TREASURY +\
+                DEBT +\
+                RRP +\
+                UST_1M +\
+                YIELD_CURVE +\
+                LIBOR +\
+                C(RATE_DOWN) +\
+                C(RATE_UP) +\
+                UST3M_BIDASK",
+            data=ddf,missing='drop',hasconst=True)\
+                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
+res26 = spec26.summary()
+res26
+
+# 4: Bills only
+spec4 = ols("GCF_TREASURY ~\
                 SOMA_BILLS +\
                 DEBT +\
                 RRP +\
                 UST_1M +\
                 YIELD_CURVE +\
+                LIBOR +\
                 C(RATE_DOWN) +\
-                C(RATE_UP) +\
-                LIBOR",
-                # LIQ +
-                # DUMMIES
+                C(RATE_UP)",
             data=ddf,missing='drop',hasconst=True)\
                 .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
-res2 = spec2.summary()
-res2
+res4 = spec4.summary()
+res4
 
-# 3_1: Collateral Spread Specfication
-spec31 = ols("COLLATERAL_SPREAD ~\
-                SOMA_TREASURY +\
-                DEBT",
-            data=ddf,missing='drop',hasconst=True)\
-                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
-res31 = spec31.summary()
-res31
-
-# 3_2
-spec32 = ols("COLLATERAL_SPREAD ~\
-                SOMA_TREASURY +\
-                DEBT +\
-                RRP +\
-                YIELD_CURVE +\
-                VIX +\
-                UST_1M +\
-                C(RATE_DOWN) +\
-                C(RATE_UP) +\
-                LIBOR",
-            data=ddf,missing='drop',hasconst=True)\
-                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
-res32 = spec32.summary()
-res32
-
-# 3_3
-spec33 = ols("COLLATERAL_SPREAD ~\
-                SOMA_TREASURY +\
-                DEBT +\
-                PD_FAILS +\
-                RRP +\
-                VIX +\
-                UST_1M +\
-                YIELD_CURVE +\
-                C(RATE_DOWN) +\
-                C(RATE_UP) +\
-                LIBOR",
-            data=ddf,missing='drop',hasconst=True)\
-                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
-res33 = spec33.summary()
-res33
-
-# 4
-spec4 = ols("RRP ~\
+# 5: Explaining RRP
+spec5 = ols("RRP ~\
                 C(RRP_RATE) +\
                 UST_1M",
             data=ddf,missing='drop',hasconst=True)\
                 .fit(cov_type="HAC",cov_kwds={'maxlags': 4})
-res4 = spec4.summary()
-res4
-
+res5 = spec5.summary()
+res5
 df[["RRP","UST_1M"]].corr()
 
 # Export results
-sg1 = Stargazer([spec11,spec12,spec13])
-#sg2 = Stargazer([spec2])
-sg3_12 = Stargazer([spec31,spec32])
-sg3_34 = Stargazer([spec33])
+sg1 = Stargazer([spec11,spec12,spec13,spec14])
+sg2 = Stargazer([spec21,spec22,spec23])
+sg24 = Stargazer([spec24,spec25,spec26])
 
 with open(tab_path+'reg1.txt', 'w') as f:
      f.write(sg1.render_latex())
-with open(tab_path+'reg3_12.txt', 'w') as f:
-     f.write(sg3_12.render_latex())
-with open(tab_path+'reg3_34.txt', 'w') as f:
-     f.write(sg3_34.render_latex())
+with open(tab_path+'reg2.txt', 'w') as f:
+     f.write(sg2.render_latex())
+with open(tab_path+'reg24.txt', 'w') as f:
+     f.write(sg24.render_latex())
 
 # --- Statistics --- 
 df_stats = df[["GCF_TREASURY","COLLATERAL_SPREAD","LIBOR",
@@ -355,32 +413,44 @@ with open(tab_path+'stats.txt', 'w') as f:
 
 coll = pd.read_excel("data/repledged.xlsx",
                           index_col="Date")
-
 coll["sum"] = coll.iloc[:,0] + coll.iloc[:,1]
 
 # --- Figures --- 
 
-## Figure 1: Collateral Spread
-f_1, ax = plt.subplots(1,1)
-ax.xaxis.set_major_locator(mdates.MonthLocator(interval=3))
-ax.xaxis.set_major_formatter(mdates.DateFormatter("%b \'%y"))
-ax.tick_params(axis='x', rotation=45)
-ax.plot(coll_spread.loc[start:end]*100,c='k',lw=3)
-ax.set_ylabel("bps")
-ax.axhline(0,c='C3')
-ax.set_title("Collateral Spread")
-ax.set_xlim(start)
+
+# dtcc = pd.read_csv("data/dtcc.csv",index_col="Date") / 1000000000
+# dtcc.index = pd.to_datetime(dtcc.index)
+# dtcc = dtcc.loc[:"2022-01-02"]
+# f, ax = plt.subplots(1,1)
+# ax.stackplot(dtcc.index,
+#              dtcc["Treasury Total PAR Value"])
+
+# Figure 2: Main variables
+f_2, ax = plt.subplots(4,1,figsize=[15,12])
+for i in range(4):
+    ax[i].set_xlim(dtt(2009,1,1),dtt(2021,12,30))
+ax[0].plot(df["GCF_TREASURY"],c='k',
+           label="_nolegend_")
+ax[0].plot(df["DFEDTAR"]*100,c='gray',
+           ls='--',alpha=0.6,
+           label="Upper target of the Fed funds rate, bps")
+ax[0].legend()
+ax[0].set_ylim(-30,300)
+ax[1].plot(df["COLLATERAL_SPREAD"],c='k')
+ax[1].axhline(0,c='gray',ls='--',alpha=0.6)
+ax[1].set_ylim(-47,47)
+ax[2].plot(df["SOMA_TREASURY"],c='k')
+ax[3].plot(df["DEBT"],c='k')
+ax[0].set_title("GCF Treasury Repo Rate, bps")
+ax[1].set_title("US Collateral Spread, bps")
+ax[2].set_title("SOMA Treasury holdings, tril USD")
+ax[3].set_title("Treasury debt outstanding, tril USD")
 sns.despine()
 plt.tight_layout()
-# f_1.savefig(fig_path+"collateral_spread.pdf")
+f_1.savefig(fig_path+"main_vars.pdf")
 
-#df.plot(subplots=True,layout=(6,6))
 
-dtcc = pd.read_csv("data/dtcc.csv",index_col="Date") / 1000000000
-dtcc.index = pd.to_datetime(dtcc.index)
-dtcc = dtcc.loc[:"2022-01-02"]
 
-f, ax = plt.subplots(1,1)
-ax.stackplot(dtcc.index,
-             dtcc["Treasury Total PAR Value"])
+
+
 

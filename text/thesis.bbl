@@ -1,0 +1,107 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Arrata et~al.(2018)Arrata, Nguyen, Rahmouni-Rousseau, and
+  Vari]{arrata2018}
+W.~Arrata, B.~Nguyen, I.~Rahmouni-Rousseau, and M.~Vari.
+\newblock The scarcity effect of quantitative easing on repo rates:.
+\newblock \emph{{IMF} Working Papers}, 18\penalty0 (258):\penalty0 1, 2018.
+\newblock \doi{10.5089/9781484386910.001}.
+\newblock URL \url{https://doi.org/10.5089/9781484386910.001}.
+
+\bibitem[D{\textquotesingle}Amico et~al.(2014)D{\textquotesingle}Amico, Fan,
+  and Kitsul]{damico2014}
+S.~D{\textquotesingle}Amico, R.~Fan, and Y.~Kitsul.
+\newblock The scarcity vale of treasury collateral: Repo market effects of
+  security-specific supply and demand factors.
+\newblock \emph{{SSRN} Electronic Journal}, 2014.
+\newblock \doi{10.2139/ssrn.2363708}.
+\newblock URL \url{https://doi.org/10.2139/ssrn.2363708}.
+
+\bibitem[De~Fiore et~al.(2018)De~Fiore, Hoerova, and Uhlig]{fiore2018}
+F.~De~Fiore, M.~Hoerova, and H.~Uhlig.
+\newblock Money markets, collateral and monetary policy.
+\newblock Working Paper 25319, National Bureau of Economic Research, November
+  2018.
+\newblock URL \url{http://www.nber.org/papers/w25319}.
+
+\bibitem[Duffie(1996)]{duffie1996}
+D.~Duffie.
+\newblock Special repo rates.
+\newblock \emph{Journal of Finance}, 51\penalty0 (2):\penalty0 493--526, 1996.
+
+\bibitem[Gern et~al.(2015)Gern, Jannsen, Kooths, and Wolters]{gern2015}
+K.-J. Gern, N.~Jannsen, S.~Kooths, and M.~Wolters.
+\newblock Quantitative easing in the euro area: Transmission channels and
+  risks.
+\newblock \emph{Intereconomics}, 50\penalty0 (4):\penalty0 206–212, August
+  2015.
+\newblock \doi{https://doi.org/10.1007/s10272-015-0543-1}.
+
+\bibitem[Han and Seneviratne(2018)]{han2018}
+F.~Han and D.~Seneviratne.
+\newblock Scarcity effects of quantitative easing on market liquidity: Evidence
+  from the japanese government bond market.
+\newblock \emph{{SSRN} Electronic Journal}, 2018.
+\newblock \doi{10.2139/ssrn.3221269}.
+\newblock URL \url{https://doi.org/10.2139/ssrn.3221269}.
+
+\bibitem[Jank et~al.(2021)Jank, Mönch, and Schneider]{jank2021}
+S.~Jank, E.~Mönch, and M.~Schneider.
+\newblock {Safe asset shortage and collateral reuse}.
+\newblock Discussion Papers 39/2021, Deutsche Bundesbank, Aug. 2021.
+\newblock URL \url{https://ideas.repec.org/p/zbw/bubdps/392021.html}.
+
+\bibitem[Krishnamurthy and Vissing-Jorgensen(2012)]{krishnamurthy2012}
+A.~Krishnamurthy and A.~Vissing-Jorgensen.
+\newblock {The Aggregate Demand for Treasury Debt}.
+\newblock \emph{Journal of Political Economy}, 120\penalty0 (2):\penalty0
+  233--267, 2012.
+\newblock \doi{10.1086/666526}.
+
+\bibitem[Nyborg(2015)]{nyborg2015}
+K.~G. Nyborg.
+\newblock {Central Bank Collateral Frameworks}.
+\newblock \penalty0 (15-10), Feb. 2015.
+\newblock URL \url{https://ideas.repec.org/p/chf/rpseri/rp1510.html}.
+
+\bibitem[Nyborg(2019)]{nyborg2019a}
+K.~G. Nyborg.
+\newblock Repo rates and the collateral spread puzzle.
+\newblock \emph{{SSRN} Electronic Journal}, 2019.
+\newblock \doi{10.2139/ssrn.3335203}.
+\newblock URL \url{https://doi.org/10.2139/ssrn.3335203}.
+
+\bibitem[Nyborg and R\"{o}sler(2019)]{nyborg2019b}
+K.~G. Nyborg and C.~R\"{o}sler.
+\newblock Repo rates and the collateral spread: Evidence.
+\newblock \emph{{SSRN} Electronic Journal}, 2019.
+\newblock \doi{10.2139/ssrn.3335201}.
+\newblock URL \url{https://doi.org/10.2139/ssrn.3335201}.
+
+\bibitem[Singh and Pozsar(2012)]{singh2011}
+M.~Singh and Z.~Pozsar.
+\newblock The nonbank-bank nexus and the shadow banking system.
+\newblock \emph{IMF Working Paper}, \penalty0 (11/289), 2012.
+
+\bibitem[Singh and Stella(2012)]{singh2012}
+M.~Singh and P.~Stella.
+\newblock Money and collateral.
+\newblock \emph{IMF Working Paper}, \penalty0 (12/95), 2012.
+
+\bibitem[Singh(2017)]{singh2017}
+M.~M. Singh.
+\newblock {Collateral Reuse and Balance Sheet Space}.
+\newblock IMF Working Papers 2017/113, International Monetary Fund, May 2017.
+\newblock URL \url{https://ideas.repec.org/p/imf/imfwpa/2017-113.html}.
+
+\bibitem[Sissoko(2020)]{sissoko2020}
+C.~Sissoko.
+\newblock The collateral supply effect on central bank policy.
+\newblock \emph{SSRN}, August 2020.
+
+\end{thebibliography}

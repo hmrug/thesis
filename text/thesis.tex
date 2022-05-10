@@ -246,10 +246,11 @@ Apart from already mentioned academic papers on scarcity effects, there is also 
 
 The second stain is the literature on repo market rates and cash market rates of US Treasuries. The work of \citet{duffie1996} introduced a model that shows how short-selling Treasuries obtained by reverse-repo transactions can create squeezes at delivery dates and so, cause some repos to trade on special. Special repo rates are not studied in this research, however, mechanics of special repos are important because US Treasuries, as a whole asset group, are special on their own. \citet{krishnamurthy2012} show that yields of US Treasury securities have a non-default component that makes them trade at a significant premiu. 
 
-The last branch of literature is concerned with the collateral supply and its intermediation. \citet{singh2011} shows how collateral agency is embedded into the shadow banking system. \citet{sissoko2020} show how sufficient collateral supply is crucial to properly functioning money markets and effective monetary policy. \citet{singh2012} introduce and explain a phenomenon of "collateral-chains". \citet{singh2017} calculates the collateral re-use rate that represents endogenous shadow creation of collateral. \citet{jank2020} finds a positive relationship between ECB bond purchases (PSPP) and the re-use rate of collateral suggesting that the market participants adjust to shocks in collateral scarcity by utilizing more source collateral.
+The last branch of literature is concerned with the collateral supply and its intermediation. \citet{singh2011} shows how collateral agency is embedded into the shadow banking system. \citet{sissoko2020} show how sufficient collateral supply is crucial to properly functioning money markets and effective monetary policy. \citet{singh2012} introduce and explain a phenomenon of "collateral-chains". \citet{singh2017} calculates the collateral re-use rate that represents endogenous shadow creation of collateral. \citet{jank2021} finds a positive relationship between ECB bond purchases (PSPP) and the re-use rate of collateral suggesting that the market participants adjust to shocks in collateral scarcity by utilizing more source collateral.
 
 Investigating scarcity effects of unconventional monetary policy is important because it is not certain that government bond purchasing programs of central banks have a net positive effect on the real economy. Benefits of QE or PSPP are not clear. Despite over 10 years of bloated central bank balance sheets, inflation and growth did not follow.\footnote{According to \citet{gern2015}, increase in GDP and inflation are two final effects of the QE/PSPP transmission mechanism.}. If scarcity effects are large and significant, then a lack of central bank unsterilized actions in response to an external shock may be more beneficial than active bond purchases. Nonetheless, the final assessment must be made by looking at the bigger picture and taking into account other factors like the regulatory environment and demand for reserves. This work studies only scarcity effects. \textbf{Last but not least, scarcity effects and connection to .. may shed a light on why some central banks decide to apply controvenial collateral frameworks.}
 
+% Figure: Fed's BS
 \begin{figure}[htb!]
   \begin{center}
     \caption{The long-term rate has been very low in spite of massive QE}
@@ -265,12 +266,12 @@ The remainder of the paper is organized as follows. \textbf{Section two. Section
 % ----- COLLATERAL MECHANICS ----- 
 \section{Mechanics of collateral} \label{sec:mechanics} % 3-4 pages
 
-\lipsum[1-20]
+\newpage
 
 % ----- COLLATERAL SHORTAGE ----- 
 \section{Collateral shortage in years 2020-2022} \label{sec:shortage}% 3-4 pages 
 
-\lipsum[1-20]
+\newpage
 
 % ----- EMPIRICAL ----- 
 \section{Empirical tests} \label{sec:empirical}
@@ -337,34 +338,46 @@ The time range of the whole data set\footnote{Except primary dealer statistics d
 
 \subsection{Descriptive Statistics}
 
-\lipsum[1-3]
+Figure \ref{fig:vars} shows the evolution of the main variables in the last 11 years. The period of the two years that precede the onset of the 2020 pandemic, was the time of balance sheet normalization. Quantitative tightening started at the end of October 2017 and lasted almost two years until the repo rumble on 17th September 2019. Over that period, the Fed allowed Treasury securities and mortgage-backed securities to roll off their balance sheet. The pace of reducing Treasury holdings was \$12 billion per month, on average. At the same time the general collateral Treasury repo rate often spiked above the Fed funds upper target and the collateral spread, for almost the whole period, was negative. Interestingly, during times of QE and "taper", when securities weren't systematically bought or sold by the Fed, the collateral spread never stayed negative for so long as it did during the QT.
 
-% describe shortly the data
+Table \ref{table:stats} shows basic statistics of the dataset. The average value for the collateral spread, including year 2008, was about 2.9 basis points. If we exclude the whole year 2008 from the sample, the average value changes to -1.5 basis points (median is -0.8). This implies that since 2009, the secured rate for interbank liquidity was lower than the secured one. The observation is bizzare, to say the least, since secured lending is much safer than lending that takes place without pledging any collateral.
 
-% table + plot 3x horizontal repo rate, collateral spread, soma holdings
+The average pace of the US debt expansion before the 2020 pandemic was \$760 billion per month. From March 2020 to the end of 2021, the total value of the US debt increased by \$5.3 trillion, which is 30\% of March 2020 level.
+
+The standing reverse-repo facility was opened for the first time in the data sample in September 2013. Since that date, until the end of 2017, the average volume of overnight RRP Treasury sales was about \$110 billion. The RRP facility exploded in June 2021 when the Fed added the facility again. Since May 2021, Fed's RRP overnight Treasury sales increased from about \$0.25 trillion to over \$1.6 trillion at the end of the year.
+
+% Figure: Main variables
+\begin{figure}[htb!]
+  \begin{center}
+    \caption{Development of primary variables.}
+    \includegraphics[width=0.99\linewidth]{main_vars.pdf}
+  \end{center}
+  \label{fig:vars}
+\end{figure}
 
 % describe shortly the data
 
 % Table: Statistics
 \begin{table}[!h] \centering
 \begin{threeparttable}
-\caption{Descriptive statistics.\\Observations from January 2, 2008 to January 5, 2022 (except the last variable which data starts from April 3, 2013). The data below is not transformed, however, regressions in the following section apply first-differencing.}
+\caption{Descriptive statistics.}
 \begin{tabular}{lrrrrr}
 \toprule
 {} &    mean &    min &     max &    std &  obs \\
 \midrule
-  GCF Treasury ON repo rate (bps)      &   64.00 & -19.30 &  418.40 &  82.63 &  732 \\
+GCF Treasury O/N repo rate (bps) &   64.00 & -19.30 &  418.40 &  82.63 &  732 \\
 Collateral spread, USD (bps) &    2.89 & -47.11 &  495.28 &  29.63 &  731 \\
-ON USD LIBOR rate (bps)             &   66.97 &   5.46 &  509.38 &  87.47 &  731 \\
-1-month UST yield (bps)           &    0.52 &   0.00 &    3.37 &   0.77 &  732 \\
-10-year less 3-month UST yield (bps)       &  183.24 & -49.00 &  380.00 &  96.53 &  732 \\
-  Treasury SOMA holdings (tril USD)     &    3.54 &   0.47 &    8.23 &   1.74 &  729 \\
-  Treasury debt outstanding (tril USD)              &   13.00 &   5.10 &   23.03 &   4.47 &  732 \\
-  Fed's RRP standing facility volume (tril USD)               &    0.09 &   0.00 &    1.70 &   0.25 &  732 \\
-VIX volatility index              &   20.15 &   9.19 &   80.86 &   9.76 &  732 \\
-  Treasury security repo fails (all fails)          &    0.19 &   0.06 &    0.89 &   0.11 &  457 \\
+O/N USD LIBOR rate (bps) &   66.97 &   5.46 &  509.38 &  87.47 &  731 \\
+1-month UST yield (bps) &   51.52 &   0.00 &  337.00 &  77.08 &  732 \\
+10-year less 3-month UST yield (bps) &  183.24 & -49.00 &  380.00 &  96.53 &  732 \\
+Treasury SOMA holdings (tril USD) &    2.04 &   0.43 &    5.17 &   1.12 &  729 \\
+Treasury debt outstanding (tril USD) &   13.00 &   5.10 &   23.03 &   4.47 &  732 \\
+Fed's RRP standing facility volume (tril USD) &    0.09 &   0.00 &    1.70 &   0.25 &  732 \\
+VIX volatility index &   20.15 &   9.19 &   80.86 &   9.76 &  732 \\
+Treasury security repo fails (all fails) &    0.19 &   0.06 &    0.89 &   0.11 &  457 \\
 \bottomrule
 \end{tabular}
+Observations from January 2, 2008 to January 5, 2022 (except the last variable which data starts from April 3, 2013). The data above is not transformed, however, regressions in the following section apply first-differencing.
 \label{table:stats}
 \end{threeparttable}
 \end{table}
@@ -377,15 +390,13 @@ There are two sets of OLS regressions with two different dependent variables. My
 
 \begin{equation} \label{eq:1}
   \begin{gathered}
-  \Delta \textit{Treasury Repo Rate} = \beta_0 + \beta_1 \Delta \textit{SOMA Treasury}_t + \beta_2 \Delta \textit{Debt}_t \\ + \beta_3 \Delta \textit{RRP}_t  + \beta_4 \Delta \textit{UST 1M}_t + \gamma \textit{Controls}_{i,t}
+  \Delta \textit{Treasury Repo Rate} = \beta_0 + \beta_1 \Delta \textit{SOMA Treasury}_t + \beta_2 \Delta \textit{Debt}_t \\ + \beta_3 \Delta \textit{RRP}_t  + \beta_4 \Delta \textit{UST 1M}_t + \gamma \textit{Controls}_{i,t} + \epsilon_{i,t}
   \end{gathered}
 \end{equation}
 
 $\Delta$ SOMA Treasury and $\Delta$ Debt variables are supply factors of the underlying collateral. The former shows to what extend the Fed draws Treasury securities out of the market and the latter variables represents provision of collateral to the market.
 
 Fed's RRP standing facility sales are initiated by agents that seek to lend reserves to the central bank. Therefore, Treasury sales that go through the RRP facility are a demand factor for collateral. RRP volume alone cannot capture all of the demand that exist for liquid Treasury securities. It is so because only eligible parties can access central bank facilities and the price of those reverse-repo contracts is set only by the Fed. In order to account for demand for Treasury securities in the wider market, I use the $\Delta$ UST 1M variable, which is a yield on generic one month Treasury bill. \textbf{The quality of the underlying collateral affects repo rates as showed by Bartolini et al and Nyborg. Consequently, as the yield of the underlying security rises, the repo rate should also increase}.
-
-% Controls
 
 To capture the effect of other determinants of the repo rate I incorporate three more macro variables, as well as four categorical variables that control for changes in monetary policy. Those additional macro variables are the VIX stock volatility index and the UST yield curve.
 
@@ -399,71 +410,73 @@ Since the Global Financial Crisis, activity in the unsecured money market segmen
 
 The problem of a possible reverse causality may not be as big as I render it. However, the fact that the USD ICE LIBOR rates use panel bank methodology, which essentially is a daily survey, coupled with a well-known relative illiquidity and tiny size of the fed funds market, suggest that it would be wise to carefully tackle this issue.
 
-A simple substitution of collateral spread for the repo rate should solve this issue and make the model more robust. The collateral spread, being the difference between the unsecured and secured rate, should remove most of the variability that is caused by the demand for funds as both rates will respond to these occasions in the same direction. For this reason, the second specification sets the collateral spread as the dependent variable and puts the O/N USD LIBOR rate on the right-hand side of the equation to control for any tightness in the unsecured market, which in theory should still move the collateral spread \citet{nyborg2019a}. 
-
 \begin{equation} \label{eq:2}
   \begin{gathered}
-  \Delta \textit{Collateral Spread} = \beta_0 + \beta_1 \Delta \textit{SOMA Treasury}_t + \beta_2 \Delta \textit{Debt}_t \\ + \beta_3 \Delta \textit{RRP}_t + \beta_4 \Delta \textit{LIBOR}_t + \beta_5 \Delta \textit{UST 1M}_t + \gamma \textit{Controls}_{i,t}
+    \Delta \textit{Collateral Spread} = \beta_0 + \beta_1 \Delta \textit{SOMA Treasury}_t + \beta_2 \Delta \textit{Debt}_t \\ + \beta_3 \Delta \textit{RRP}_t + \beta_4 \Delta \textit{LIBOR}_t + \beta_5 \Delta \textit{UST 1M}_t + \gamma \textit{Controls}_{i,t} + \epsilon_{i,t}
   \end{gathered}
 \end{equation}
 
-In general, drivers of the GC collateral spreads are known \citet{nyborg2019a}. These are
+A simple substitution of collateral spread for the repo rate should solve this issue and make the model more robust. The collateral spread, being the difference between the unsecured and secured rate, should remove most of the variability that is caused by the demand for funds as both rates will respond to these occasions in the same direction. For this reason, the second specification sets the collateral spread as the dependent variable and puts the O/N USD LIBOR rate on the right-hand side of the equation to control for any tightness in the unsecured market. Conditions in the unsecured interbank market for liquidity still affects the collateral spread \citet{nyborg2019a}, so the unsecured rate is still included as the depended variable, but the reverse causality problem is avoided.
 
-% Why collateral spread, nyborg's drivers and why I don't use them
+Other known determinants or the collateral spread are liquidity and volatility of the underlying security, haircut and risk-aversion. Regarding attributes of the underlying security in the cash market, it is not clear which security in particular should be analyzed as my repo rate cover a wide variety of Treasuries. For instance, on-the-run Treasury bills are much more liquid than off-the-run Treasury bonds. Thus, I don't use any liquidity metric and for I proxy the overall volatility in the markets as well as risk-aversion with the VIX index. Haircuts are not taken into account as all Treasury securities are deemed to have the same level of safety.
 
-% PD repo failures
+There is also one Treasuries supply factor that should be included in my regressions but isn't due to the unavailability of a high-frequency metric for that factor. It is a variable that represents the rehypothecation of collateral in the monetary system. The more often collateral is re-used collateral in the system, the higher the overall supply of collateral. Some banks put the amount of received  collateral that is allowed to be repledged in their quarterly reports. Unfortunately, the size of that data is too small to be meaningful given the time frame of this study.
 
-% Dummy variables
-
-% Errors, multicolinearity problems
-
-% Lacks data proxies on the rehypothecation, the data is difficult to get and estimate
-
-
-
-% & fist-difference ($X_t-X_{t-1}$)
+\newpage %
 
 \subsection{Results} % 4 pages
 
+The two sets of regressions, which results are showed in the tables below confirm the hypothesis that the Fed's purchases of Treasuries put a downward pressure on the GCF Treasury repo rate, and so a upward pressure on the US collateral spread. A high and statically significant coefficient for the SOMA Treasury holdings variable in each regression specification suggest that the scarcity effects from quantitative easing programs are real.
+
+Table \ref{table:reg1} shows how supply factors of US Treasury collateral affect the general collateral Treasury repo rate. The coefficient next to "SOMA TREASURY" variable in the second column of the table (-45.55) implies that a \$1 trillion of the Fed's Treasury purchases causes the repo rate to decline, on average, by 45 basis points, with all other determinants held constant. The magnitude of the effect is much smaller than in \citet{damico2014}, however, that study is much different as it looks on the special repo rates as opposed to general collateral repo rates.
+
+Four regressions are included in the table \ref{table:reg1}. The fist column looks only at the level of Treasuries on the Fed's balance sheet and the overall US Treasury debt outstanding. \citet{damico2014} and \citet{arrata2018} merge two of these values into one variable, that is a ratio of the former to the latter. Here, I put those variables separately to understand a relative magnitude of both. As illustrated in the table, extracting high-quality collateral from the market affects the repo rate more than the US Department of Treasury provision of these securities. The second column adds other important factors that move the repo rate. All of them are statistically significant. Including those factors addresses the omitted variable bias, as both, SOMA and debt, coefficients are much smaller after the model extension. Columns 3, adds the overnight US dollar LIBOR rate. It doesn't change much as the coefficient of the LIBOR rate is small. Moreover, there are possible reverse causality problems when adding this variable, and its statistical explanatory power is very low. The last column adds dummy variables that represent the dates when the Fed clearly took action in regards to the size of their balance sheet. Initiating or expanding quantitative easing contributed to rising repo rate, and doing the opposite plausibly decreased the dependent variable. However, the coefficient of the last variable, which is a dummy for QT dates, is not statistically significant.
+
+Surprisingly, the reverse-repo standing facility had a large impact on the direction of the repo rate. It was expected to have some impact, but the magnitude of its effect is astonishing. Results suggest that freeing up Treasuries from the Fed's balance sheet have more influence of the GC repo rate than the primary issuance of those securities. This is counter-intuitive because on-the-run Treasuries, which are newly-issued, are more preferred by the market participants 
+
+
+% All regressions use Newey–West standard errors to make them more robust. The number of lags is equal to the closes integer of the fourth root of the number of observations (726), which is 5.  % & fist-difference ($X_t-X_{t-1}$)
+
+% Regression table 1: GCF repo rate
 \begin{table}[!htbp] \centering
-\caption{Regression --- GCF Treasury repo rate and the supply of Treasury securites}
-\begin{tabular}{@{\extracolsep{5pt}}lccc}
+\caption{Regression --- GCF Treasury repo rate and the supply of Treasury securities}
+\begin{tabular}{@{\extracolsep{5pt}}lcccc}
 \\[-1.8ex]\hline
 \hline \\[-1.8ex]
-& \multicolumn{3}{c}{\textit{Dependent variable: TREASURY REPO RATE}} \
-\cr \cline{3-4}
-  \\[-1.8ex] & (1) & \textbf{(2)} & (3) \\
+& \multicolumn{4}{c}{\textit{Dependent variable: GCF Treasury repo rate}} \
+\cr \cline{4-5}
+\\[-1.8ex] & (1) & (2) & (3) & (4) \\
 \hline \\[-1.8ex]
- Intercept & -0.839$^{}$ & -0.276$^{}$ & -0.360$^{}$ \\
-  & (0.550) & (0.299) & (0.287) \\
- SOMA TREASURY & -45.705$^{}$ & -22.739$^{**}$ & -21.560$^{*}$ \\
-  & (29.135) & (11.456) & (11.279) \\
- DEBT & 30.750$^{**}$ & 22.465$^{**}$ & 23.156$^{**}$ \\
-  & (12.034) & (10.603) & (10.224) \\
- RRP & & 30.419$^{**}$ & 30.327$^{**}$ \\
-  & & (13.734) & (13.711) \\
- YIELD CURVE & & -0.113$^{*}$ & -0.119$^{*}$ \\
-  & & (0.068) & (0.064) \\
- UST 1M & & 64.630$^{***}$ & 64.483$^{***}$ \\
-  & & (12.022) & (11.618) \\
- VIX & & 0.159$^{}$ & 0.100$^{}$ \\
-  & & (0.165) & (0.143) \\
- C(RATE DOWN) & & -36.705$^{***}$ & -36.520$^{***}$ \\
-  & & (7.798) & (7.804) \\
- C(RATE UP) & & 19.374$^{***}$ & 18.043$^{***}$ \\
-  & & (1.890) & (2.047) \\
- LIBOR & & & 0.064$^{}$ \\
-  & & & (0.044) \\
- C(FED QE DATES) & & & 7.943$^{**}$ \\
-  & & & (3.297) \\
- C(FED QT DATES) & & & -1.674$^{}$ \\
-  & & & (1.217) \\
+ Intercept & -0.818$^{}$ & -0.265$^{}$ & -0.256$^{}$ & -0.366$^{}$ \\
+  & (0.568) & (0.295) & (0.293) & (0.280) \\
+ SOMA TREASURY & -91.651$^{**}$ & -45.549$^{***}$ & -41.788$^{**}$ & -40.532$^{**}$ \\
+  & (45.276) & (17.261) & (17.358) & (17.597) \\
+ DEBT & 33.710$^{***}$ & 23.180$^{**}$ & 23.801$^{**}$ & 24.281$^{**}$ \\
+  & (12.068) & (10.366) & (10.121) & (10.318) \\
+ RRP & & 30.961$^{**}$ & 30.904$^{**}$ & 31.183$^{**}$ \\
+  & & (13.603) & (13.664) & (13.846) \\
+ UST 1M & & 0.630$^{***}$ & 0.627$^{***}$ & 0.644$^{***}$ \\
+  & & (0.123) & (0.118) & (0.118) \\
+ YIELD CURVE & & -0.127$^{**}$ & -0.133$^{**}$ & -0.119$^{*}$ \\
+  & & (0.063) & (0.059) & (0.065) \\
+ C(RATE DOWN) & & -36.442$^{***}$ & -35.779$^{***}$ & -36.258$^{***}$ \\
+  & & (7.825) & (7.706) & (7.825) \\
+ C(RATE UP) & & 19.735$^{***}$ & 18.211$^{***}$ & 18.103$^{***}$ \\
+  & & (1.758) & (2.000) & (2.045) \\
+ LIBOR & & & 0.065$^{}$ & 0.062$^{}$ \\
+  & & & (0.044) & (0.043) \\
+ VIX & & & & 0.105$^{}$ \\
+  & & & & (0.147) \\
+ C(FED EASENING) & & & & 7.963$^{**}$ \\
+  & & & & (3.343) \\
+ C(FED TIGHTENING) & & & & -1.934$^{}$ \\
+  & & & & (1.362) \\
 \hline \\[-1.8ex]
- Observations & 726 & 726 & 726 \\
- Adjusted $R^2$ & 0.013 & 0.504 & 0.511 \\
+ Observations & 726 & 726 & 726 & 726 \\
+ Adjusted $R^2$ & 0.020 & 0.504 & 0.509 & 0.512 \\
 \hline
 \hline \\[-1.8ex]
-  & & & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}
+\textit{Note:} & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
 \end{tabular}
 \begin{flushleft}
   \textit{Notes: All variables, except categorical "C" ones, are in first-difference form. Standard errors are heteroscedasticity and autocorrelation robust (HAC) using 5 lags and without small sample correction (in parentheses). All variables are defined in table \ref{table:variables}.}
@@ -471,48 +484,55 @@ In general, drivers of the GC collateral spreads are known \citet{nyborg2019a}. 
 \label{table:reg1}
 \end{table}
 
+% Regression table 2: Collateral spread
 \begin{table}[!htbp] \centering
 \caption{Regrression --- Measuring scarcity effects with collateral spread}
-\begin{tabular}{@{\extracolsep{5pt}}lcc}
+\begin{tabular}{@{\extracolsep{5pt}}lccc}
 \\[-1.8ex]\hline
 \hline \\[-1.8ex]
-& \multicolumn{2}{c}{\textit{Dependent variable: COLLATERAL SPREAD}} \
-\cr \cline{2-3}
-  \\[-1.8ex] & (1) & \textbf{(2)} \\
+& \multicolumn{3}{c}{\textit{Dependent variable: US Collateral spread}} \
+\cr \cline{3-4}
+\\[-1.8ex] & (1) & (2) & (3) \\
 \hline \\[-1.8ex]
- Intercept & 0.914$^{}$ & 0.262$^{}$ \\
-  & (0.621) & (0.298) \\
- SOMA TREASURY & 16.843$^{}$ & 21.498$^{**}$ \\
-  & (12.801) & (10.825) \\
- DEBT & -46.471$^{**}$ & -23.175$^{**}$ \\
-  & (19.259) & (10.291) \\
- RRP & & -30.394$^{**}$ \\
-  & & (13.761) \\
- LIBOR & & 0.936$^{***}$ \\
-  & & (0.043) \\
- YIELD CURVE & & 0.122$^{*}$ \\
-  & & (0.064) \\
- UST 1M & & -64.121$^{***}$ \\
-  & & (11.605) \\
- VIX & & -0.132$^{}$ \\
-  & & (0.165) \\
- C(RATE DOWN) & & 36.027$^{***}$ \\
-  & & (7.717) \\
- C(RATE UP) & & -17.918$^{***}$ \\
-  & & (2.075) \\
+ Intercept & 0.933$^{}$ & 0.256$^{}$ & 0.366$^{}$ \\
+ SOMA TREASURY & 25.869$^{}$ & 41.788$^{**}$ & 40.532$^{**}$ \\
+  & (22.988) & (17.358) & (17.597) \\
+ DEBT & -46.641$^{**}$ & -23.801$^{**}$ & -24.281$^{**}$ \\
+  & (19.162) & (10.121) & (10.318) \\
+  & (0.636) & (0.293) & (0.280) \\
+ RRP & & -30.904$^{**}$ & -31.183$^{**}$ \\
+  & & (13.664) & (13.846) \\
+ UST 1M & & -0.627$^{***}$ & -0.644$^{***}$ \\
+  & & (0.118) & (0.118) \\
+ LIBOR & & 0.935$^{***}$ & 0.938$^{***}$ \\
+  & & (0.044) & (0.043) \\
+ YIELD CURVE & & 0.133$^{**}$ & 0.119$^{*}$ \\
+  & & (0.059) & (0.065) \\
+ C(RATE DOWN) & & 35.779$^{***}$ & 36.258$^{***}$ \\
+  & & (7.706) & (7.825) \\
+ C(RATE UP) & & -18.211$^{***}$ & -18.103$^{***}$ \\
+  & & (2.000) & (2.045) \\
+ VIX & & & -0.105$^{}$ \\
+  & & & (0.147) \\
+ C(FED EASENING) & & & -7.963$^{**}$ \\
+  & & & (3.343) \\
+ C(FED TIGHTENING) & & & 1.934$^{}$ \\
+  & & & (1.362) \\
 \hline \\[-1.8ex]
- Observations & 726 & 726 \\
- Adjusted $R^2$ & 0.007 & 0.770 \\
+ Observations & 726 & 726 & 726 \\
+ Adjusted $R^2$ & 0.007 & 0.770 & 0.772 \\
 \hline
 \hline \\[-1.8ex]
-  & & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01}
+\textit{Note:} & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
 \end{tabular}
 \begin{flushleft}
 \vspace{-5pt}
-  \textit{Notes: Collateral spread is defined as the difference between USD ON LIBOR rate and ON GCF Treasury repo rate. All variables, except categorical "C" ones, are in first-difference form. Standard errors are heteroscedasticity and autocorrelation robust (HAC) using 4 lags and without small sample correction (in parentheses). All variables are defined in table \ref{table:variables}.}
+  \textit{Notes: Collateral spread is defined as the difference between USD ON LIBOR rate and ON GCF Treasury repo rate. All variables, except categorical "C" ones, are in first-difference form. Standard errors are heteroscedasticity and autocorrelation robust (HAC) using 5 lags and without small sample correction (in parentheses). All variables are defined in table \ref{table:variables}.}
 \end{flushleft}
 \label{regression:2}
 \end{table}
+
+\newpage %
 
 % ----- CONCLUSIONS ----- 
 \section{Conclusions} % 2 pages
@@ -532,60 +552,65 @@ In general, drivers of the GC collateral spreads are known \citet{nyborg2019a}. 
 % \end{appendix}
 
 \begin{appendices}
-\section{Tables}
+% \section{Tables}
 
+% Regression table 3: Collateral spread, additional variables NEW
 \begin{table}[!htbp] \centering
-\caption{Regression -- Adding repo rate volatility or repo fails on top of Treasury security supply factors "breaks" the regression}
-\begin{tabular}{@{\extracolsep{5pt}}lcc}
+\caption{Regression -- Adding other plausible explanatory variables to the collateral spread specification.}
+\vspace{-10pt}
+\begin{flushleft}
+Variable "UST 3M BID-ASK" is the bid-ask spread of a generic 3-month Treasury bill yield. Variable "UST 3M 10W VOL" is the 10-week realized volatility of a generic 3-month Treasury bill yield. The first column regression uses a smaller data sample that starts April 3, 2013. All newly added variables are not statistically significant (p-values exceed as much as 0.3). Condition number of the third column regression is large which indicates strong multicollinearity.
+\end{flushleft}
+\begin{tabular}{@{\extracolsep{5pt}}lccc}
 \\[-1.8ex]\hline
 \hline \\[-1.8ex]
-& \multicolumn{2}{c}{\textit{Dependent variable: Collateral Spread}} \
-\cr \cline{2-3}
-\\[-1.8ex] & (1) & (2) \\
+& \multicolumn{3}{c}{\textit{Dependent variable: US Collateral Spread}} \
+\cr \cline{3-4}
+\\[-1.8ex] & (1) & (2) & (3) \\
 \hline \\[-1.8ex]
- Intercept & 0.049$^{}$ & 0.454$^{*}$ \\
-  & (0.303) & (0.252) \\
- SOMA TREASURY & 7.227$^{}$ & 11.476$^{}$ \\
-  & (13.418) & (8.337) \\
- DEBT & -9.560$^{}$ & -20.727$^{***}$ \\
-  & (8.179) & (5.778) \\
- REPO VOL & -15.695$^{***}$ & \\
-  & (3.285) & \\
- PD FAILS & & -0.891$^{}$ \\
-  & & (2.845) \\
- RRP & -26.183$^{***}$ & -26.872$^{**}$ \\
-  & (9.083) & (13.483) \\
- YIELD CURVE & 0.290$^{***}$ & 0.171$^{***}$ \\
-  & (0.057) & (0.044) \\
- VIX & 0.248$^{*}$ & -0.040$^{}$ \\
-  & (0.140) & (0.067) \\
- LIBOR & 0.934$^{***}$ & 0.039$^{}$ \\
-  & (0.037) & (0.220) \\
- C(RATE DOWN) & 41.462$^{***}$ & 4.847$^{}$ \\
-  & (11.617) & (9.788) \\
- C(RATE UP) & -17.783$^{***}$ & -0.670$^{}$ \\
-  & (2.116) & (5.289) \\
+ Intercept & 0.411$^{*}$ & 0.358$^{}$ & 0.253$^{}$ \\
+  & (0.237) & (0.284) & (0.294) \\
+ SOMA TREASURY & 28.773$^{}$ & 21.443$^{}$ & 41.205$^{**}$ \\
+  & (20.417) & (28.856) & (17.177) \\
+ DEBT & -21.732$^{***}$ & -19.209$^{**}$ & -23.466$^{**}$ \\
+  & (6.063) & (9.457) & (10.184) \\
+ RRP & -27.035$^{**}$ & -30.481$^{**}$ & -31.166$^{**}$ \\
+  & (13.337) & (13.516) & (13.612) \\
+ UST 1M & 0.013$^{}$ & -0.581$^{***}$ & -0.626$^{***}$ \\
+  & (0.117) & (0.154) & (0.119) \\
+ LIBOR & 0.109$^{}$ & 0.951$^{***}$ & 0.937$^{***}$ \\
+  & (0.276) & (0.035) & (0.043) \\
+ YIELD CURVE & 0.178$^{***}$ & 0.153$^{***}$ & 0.133$^{**}$ \\
+  & (0.048) & (0.055) & (0.059) \\
+ C(RATE DOWN) & 6.631$^{}$ & 36.885$^{***}$ & 35.694$^{***}$ \\
+  & (9.963) & (8.863) & (7.720) \\
+ C(RATE UP) & -2.429$^{}$ & -19.216$^{***}$ & -18.174$^{***}$ \\
+  & (6.177) & (1.903) & (1.983) \\
+ PD FAILS & -0.791$^{}$ & & \\
+  & (2.826) & & \\
+ UST3M 10W VOL & & 0.480$^{}$ & \\
+  & & (0.490) & \\
+ UST3M BIDASK & & & 0.004$^{}$ \\
+  & & & (0.006) \\
 \hline \\[-1.8ex]
- Observations & 716 & 452 \\
- Adjusted $R^2$ & 0.766 & 0.092 \\
+ Observations & 452 & 716 & 726 \\
+ Adjusted $R^2$ & 0.096 & 0.800 & 0.770 \\
 \hline
 \hline \\[-1.8ex]
-  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+ & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
 \end{tabular}
 \begin{flushleft}
-\vspace{-3pt}
-\textit{Notes: Collateral spread is defined as the difference between USD ON LIBOR rate and GCF Treasury repo rate. All variables, except categorical "C" ones, are in first-difference form. Standard errors are heteroscedasticity and autocorrelation robust (HAC) using 4 lags and without small sample correction (in parentheses). All variables are defined in [TABLE].}
+\vspace{-5pt}
+  \textit{Notes: Collateral spread is defined as the difference between USD ON LIBOR rate and ON GCF Treasury repo rate. All variables, except categorical "C" ones, are in first-difference form. Standard errors are heteroscedasticity and autocorrelation robust (HAC) using 5 lags and without small sample correction (in parentheses). All other variables are defined in table \ref{table:variables}.}
 \end{flushleft}
-\label{regression:4}
+\label{regression:3}
 \end{table}
 
-\section{Second section}
 \end{appendices}
 
 % ----- BIBLIOGRAPHY ----- 
 \newpage
 \bibliography{refs}
-
 
 % ----- STATEMENT ----- 
 \newpage

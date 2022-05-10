@@ -1,0 +1,13 @@
+\babel@toc {british}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Mechanics of collateral}{4}{section.2}%
+\contentsline {section}{\numberline {3}Collateral shortage in years 2020-2022}{8}{section.3}%
+\contentsline {section}{\numberline {4}Empirical tests}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Data}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Descriptive Statistics}{14}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Base regression specification}{17}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Problem with the unsecured rate}{17}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Results}{19}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Conclusions}{19}{section.5}%
+\contentsline {section}{Appendix}{}{section*.17}
+\contentsline {section}{Appendix \numberline {A}Tables}{25}{appendix.a.A}%
