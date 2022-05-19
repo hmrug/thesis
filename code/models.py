@@ -33,6 +33,7 @@ plt.rcParams.update({
     "font.sans-serif": ["Helvetica"]})
 sns.set_style('whitegrid')
 #pd.set_option("max_rows",40)
+pd.options.mode.chained_assignment = None  # default='warn'
 
 # Path to the project directory
 cwd = os.getenv("THESIS_PATH")
@@ -117,7 +118,7 @@ df["UST_1M"] = df["UST_1M"] * 100
 # Fed dates dummies
 qe_dates = [
     dtt(2008,11,25), # QE1 Announced
-    dtt(2008,3,16), # QE1 Expanded
+    dtt(2009,3,16), # QE1 Expanded
     dtt(2010,8,10), # QE1 Rollover
     dtt(2010,11,3), # QE2 Announced
     dtt(2011,9,21), # Operation Twist Announced
@@ -127,7 +128,7 @@ qe_dates = [
     # dtt(2019,3,8), # Powell: BS endpoint will be highert than before the recession
     dtt(2019,3,20), # Fed announces intent to slow its balance sheet wind-down and then to end it
     # dtt(2019,7,31), # FOMC announces end to balance sheet winddown two months earlier than previously indicated
-    dtt(2019,9,20), # Continuation of Repo facility
+    dtt(2019,9,18), # Overnight lending repo facility opened
     # dtt(2019,10,11), # FOMC reaffirms Fed’s intention to conduct policy that provides for an ample supply of reserves that does not require active management
     dtt(2020,3,15), # QE4
 ]
@@ -211,6 +212,11 @@ ddf["FED_EASENING"] =  df["FED_EASENING"]
 
 df["FED_TIGHTENING"] =  fed_tightening_df.astype("bool")
 ddf["FED_TIGHTENING"] =  df["FED_TIGHTENING"]
+
+ddf["SLR"] = 0
+ddf["SLR"]["01-01-2018":] = 1
+ddf["SLR"]["01-04-2020":"31-03-2021"] = 0
+ddf["SLR"] = ddf["SLR"].astype(bool)
 
 # --- OLS specifications --- 
 n_lag = int(726**(1/4))
