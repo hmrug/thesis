@@ -277,12 +277,54 @@ The remainder of the paper is organized as follows. \textbf{Section two. Section
 % ----- COLLATERAL SHORTAGE ----- 
 \section{Collateral shortage in years 2020-2022} \label{sec:shortage}% 3-4 pages 
 
-\subsection{Treasury bill scarcity} \label{sec:bills}
+There are pieces of evidence that the QE4 program, initiated by the Fed as a response to the coronavirus pandemic in 2020, caused a substantial shortage of Treasury collateral. Even Jerome Powell, the chair of the US Fed, acknowledged that there was a shortage of T-bills in 2021.\footnote{“Fed Chair Powell testifies to House committee” - Youtube video (2:51:00 mark). URL: https://www.youtube.com/watch?v=7422XDSI8Ew.} Signals indicating Treasury collateral shortage can be seen mainly in two places: the volume of the Fed's overnight reverse repo (O/N RRP) operations and yields of short-term Treasury securities.
 
-\subsection{Fed's reverse repo standing facility} \label{sec:rrp}
+In 2013, the Fed created the RRP facility to set a strict floor on short-term rates and enhance monetary policy implementation. Money market participants that are eligible to access the RRP facility can lend out their excess reserves to the Fed for a small remuneration and an overnight Treasury collateral. In the last nine months of 2021, the volume of US Treasury security sales, that were conducted via the Fed's RRR, increased from less than \$100 billion in April) to over \$1,600 billion in late December. The increase was intriguing because normally the RRP facility isn't used at all, and has had never before broken the \$300 billion threshold.
+
+The main reason why so much money was parked at the Fed's RRP were depressed of T-bills yields. In the second half of 2021, yields of Treasury bills often traded 1-2 basis points below the RRP award rate, which at time was at 0.05\%. As money markets, to chase higher yield, rotate out of Treasury bills to the RRP, the yield on T-bills should rise and the RRP Treasury sales should level off on a certain level\footnote{Zoltan Pozsar, interest rate strategist for Credit Suisse, calculated that this would happen when the RRP facility reaches \$1.3 trillion}. Neither of those happened. At the time of writing (May 2022), the RRP reached almost \$2 trillions, despite the ongoing taper\footnote{"Taper", in the context of monetary policy, means a slowing pace of central bank asset purchases.}, and short term rates have continued to trade below the RRP rate.
+
+\citet{alfonso2022}, in an article published on "Liberty Street Economics" blog, suggest that increased size of Treasuries sold through the RRP facility can be explained with the EFFR-IOBR spread. The authors argue that when then the effective federal funds rate (EFFR) is close to the interest on balance reserves (IOBR), the RRP volumne should be low as money market participants have access to alternative (cash) investments that yield much more than the RRP facility. The problem, however, is that the changes in this spread cannot explain the massive uptake in the RRP facility over the last year. Moreover, since the Global Financial Crisis the fed funds market haven't been much liquid and as \citet{gmn22} puts it is a "pond" relative to the "ocean" of the overnight GC market. Therefore it is much more plausible that the RRP volume depends more on the yield on an alternative investment in Treasury repo markets or Treasury cash markets. Figure \ref{fig:rates} shows how key Treasury money market rates relative to the RRP and IOBR rate.
+
+As mentioned before very low yields on T-bills and Treasury backed repos make the RRP facility more attractive. Then, the two central questions are:
+\begin{enumerate}
+  \item As money flows from T-bills to higher yielding RRP, why don't T-bill yields stabilize at the RRP rate floor? (5 bps for the second half of 2021).
+  \item Why do T-bill rates plummet low in the first place?
+\end{enumerate}
+
+If, hypothetically, the RRP facility yields 5 bps overnight and a 4-week Treasury bill yields 3 bps, a money market fund (MMF) should put funds into the RRP rather than the T-bill. Somehow T-bill yields (especially the yield of a 4-week maturity bill) continue to bounce back below the RRP award rate\footnote{rrp - 4w spread in 2022}, despite that 80\% of MMFs are eligible to the RRP facility \citet{cipriani2022}.
+
+From June 2021 to January 2022, the Treasury GC repo rate was trading below the RRP award rate for 63 days out of 148 days in the sample. The widest negative spread between the repo rate and the RRP floor, -3.5 basis points, came on 21st October. A day before, on 20th October, the SOFR (Secured Overnight Financing Rate) rate decreased by 2 basis points for a few days, whereas before it was sitting on the 5 basis point floor. The drop was most probably caused by excess cash allocated by government-sponsored enterprises (GSEs) to the repo market. On 18th each month, GSEs receive mortgage payments from home owners and put the cash in the repo market for a week\citet{reuters2021}. Thus, often drops in the repo rate around 20th each month. The interpretation makes sense but has two caveat. First, GSEs have access to the RRP repo facility, so why wouldn't those entities put money in a higher yielding substitute? Second, The GSE excess cash argument only explains low repo rates during a few days in a month, and the Treasury repo rate goes below the RRP rate much more often than that (see figure \ref{fig:rates}).
+
+Given all of the information above, the most likely scenario is that depressed Treasury rates is a consequence of Treasury collateral shortage, both in the repo and cash markets. Additionally, the Treasury collateral traded i the money markets seems to be more preferable or more accessible than the collateral that comes the Fed's balance sheet.
+
+% Figure: Rates
+\begin{figure}[htb!]
+  \begin{center}
+    \caption{Rates}
+    \includegraphics[width=0.99\linewidth]{rates.pdf}
+  \end{center}
+  \label{fig:rates}
+\end{figure}
+
+The supply of Treasury collateral doesn't only come from the debt issuance of the US government, but also from the shadow banking system that creates off-balance sheet collateral on top of the already existing collateral (see section \ref{sec:mechanics}). It's hard to estimate how much off-balance sheet collateral was created in the last two years, since the start of the pandemic. Nonetheless, by looking at the total received collateral (that is allowed to be re-used) by banks, we can get a broad idea of the dynamics of the shadow banking collateral.
+
+Figure \ref{fig:rrp+coll} shows on the left side the Fed's RRP facility volume, and on the right side the total collateral of Goldman Sachs (on-balance sheet plus off-balance sheet). It is not clear whether there is a casual connection between these time-series, but it is possible that increase in both is caused by the same underlying condition, which is a scarcity of high-quality collateral. Despite that the plot on the right shows only the collateral of one bank, I found that most of American G-SIB  banks, except JP Morgan, saw the same dramatic increase in the received collateral. Surely, fiscal programs that pumped up the Treasury General Account with cash and stuffed primary dealers with Treasuries did increase those bank collateral figures. It has to be noted, though, that at the same time the Treasury deluge was balanced by the Fed's QE4 that took withdraw a portion of the new supply of Treasuries from the market. Furthermore, from March 2020 to the end of 2021, the Treasury debt increased 25\%, and if we look at the available collateral of the Goldman Sachs, it's values in the same period increased by 50\%. In short, in 2020-21 we saw a very quickly growing pool of collateral that was driven not only by rising US government debt but also by a rapidly expanding off-balance sheet collateral.
+
+Ultra-low money market rates, all-time high volume of the RRP facility and highly elevated banks' total collateral numbers suggest that the problem lies in the supply-demand misalignments of high-quality collateral.
+
+The next section tries to empirically link the supply and demand factors for Treasury collateral with the Treasury GC repo rate to prove scarcity effects of the Fed's quantitative easing programs. Unfortunately, there is not enough quality data to include off-balance sheet collateral creation in this study.
+
+% Figure: RRP and GS collateral
+\begin{figure}[htb!]
+  \begin{center}
+    \caption{RRP, GS Coll}
+    \includegraphics[width=0.99\linewidth]{rrp+coll.pdf}
+  \end{center}
+  \label{fig:rrp+coll}
+\end{figure}
 
 \newpage
-
+ 
 % ----- EMPIRICAL ----- 
 \section{Empirical tests} \label{sec:empirical}
 
@@ -438,19 +480,19 @@ There is also one Treasuries supply factor that should be included in my regress
 % Results
 \subsection{Results} \label{sec:results}
 
-The two sets of regressions, which results are shown in the tables below confirm the hypothesis that the Fed's purchases of Treasuries put a downward pressure on the GCF Treasury repo rate, and so a upward pressure on the US collateral spread. A high and statically significant coefficient for the SOMA Treasury holdings variable in each regression specification suggest that the scarcity effects from quantitative easing programs are real.
+The two sets of regressions, which results are shown in the tables below confirm the hypothesis that the Fed's purchases of Treasuries put a downward pressure on the GCF Treasury repo rate, and so an upward pressure on the US collateral spread. A high and statistically significant coefficient for the SOMA Treasury holdings variable in each regression specification suggest that the scarcity effects from quantitative easing programs are real.
 
-Table \ref{table:reg1} shows how supply factors of US Treasury collateral affect the general collateral Treasury repo rate. The coefficient next to "SOMA TREASURY" variable in the second column of the table (-45.55) implies that a \$1 trillion Treasury purchase by the Fed causes the repo rate to decline, on average, by 45 basis points, with all other determinants held constant. The magnitude of the effect is much smaller than in \citet{damico2014}, however, that study is much different as it looks on special repo rates as opposed to the general collateral repo rate.
+Table \ref{table:reg1} shows how supply factors of US Treasury collateral affect the general collateral Treasury repo rate. The coefficient next to "SOMA TREASURY" variable in the second column of the table (-45.55) implies that a \$1 trillion Treasury purchase by the Fed causes the repo rate to decline, on average, by 45.6 basis points, with all other determinants held constant. The magnitude of the effect in this paper is much smaller than in \citet{damico2014}, however, that study is much different as it looks on special repo rates as opposed to the general collateral repo rate.
 
-Four regressions are included in table \ref{table:reg1}, where the dependent variable is the GCF Treasury repo rate. The fist column looks only at the value of US Treasuries on the Fed's balance sheet and the total value of US Treasury debt outstanding. \citet{damico2014} and \citet{arrata2018} merge two of these values into one variable, that is a ratio of the former to the latter. Here, I put those variables separately to understand a relative magnitude of both. As illustrated in the table, taking high-quality collateral out of the market affects the repo rate more than the US Department of Treasury provision of these collateral securities. The second column adds other important factors that move the repo rate. All of them are statistically significant. Including those factors addresses the omitted variable bias, as both coefficients of SOMA and debt variables are much smaller after the addition of new variables in the model.
+Four regressions are included in table \ref{table:reg1}, where the dependent variable is the GCF Treasury repo rate. The fist column looks only at the value of US Treasuries on the Fed's balance sheet and the total value of US Treasury debt outstanding. The most important supply factors. \citet{damico2014} and \citet{arrata2018} merge two of these values into one variable, that is a ratio of the former to the latter. Here, I put those variables separately to understand relative magnitude of both. As illustrated in the table, taking high-quality Treasury collateral out of the market affects the repo rate more than the US Department of Treasury provision of these collateral securities. The second column adds other important factors that move the repo rate. All of them are statistically significant. Including those factors addresses the omitted variable bias, as both coefficients of SOMA Treasury holdings variable and debt variable are much smaller after the addition of those controls in the model.
 
-Columns 3, adds the overnight US dollar LIBOR rate. It doesn't change much as the coefficient of the LIBOR rate is small. Moreover, there are possible reverse causality problems when adding this variable, and its statistical explanatory power is very low. The problem with the unsecured rate in this regression setting is explained in section \ref{sec:unsecured}.
+Columns 3, adds the overnight US dollar LIBOR rate. It doesn't change the results much as the coefficient of the LIBOR rate is small. Moreover, there are possible reverse causality problems when adding this variable, and its statistical explanatory power is very low. The problem with the unsecured rate in this regression setting is explained in section \ref{sec:unsecured}.
 
-I exclude a possibility of reverse causality of the dependent variable and the main regressor, which is the Fed's Treasury holdings. The reason for this is the fact that the Fed had tried to alleviate the scarcity effect of bond purchases only once. It was done thorough a regulatory instrument, by granting a Supplementary Leverage Ratio (SLR) relief to banks in March 2020. A temporary exclusion of Treasuries and central bank reserves definitely freed up some balance sheet space of banks and allowed those banks but it had nothing to do with Treasury purchases under QE programs. Moreover, the SLR relief probably targeted the increasing size of reserves in the banking system more than the functioning of Treasury markets.
+I exclude a possibility of reverse causality of the dependent variable and the main regressor, which is the Fed's Treasury holdings variable. The reason for this is the fact that the Fed had tried to alleviate the scarcity effect of bond purchases only once. It was done through a regulatory instrument, which was a Supplementary Leverage Ratio (SLR) relief to banks in March 2020. A temporary exclusion of Treasuries and central bank reserves definitely freed up some balance sheet space of banks and allowed banks to hold more Treasuries but it had nothing to do with Treasury purchases under QE programs. Moreover, the SLR relief probably targeted the increased cost of holding a high amount of reserves in the banking system rather than Treasuries.
 
 The last column adds the VIX index and  dummy variables that represent the dates when the Fed clearly took action in regard to the size of their balance sheet. Initiating or expanding quantitative easing contributed to rising repo rate, and doing the opposite, seemingly, decreased the dependent variable. However, the coefficient of the last variable, which is a dummy for tightening balance sheet dates, is not statistically significant. The coefficient of the implied volatility index is also not significant.
 
-There are two reasons why adding those QT dates to the regression generates more noise in the model. First, quantitative tightening is a very careful and gradual process. This is contrary to announcements of QE programs, which are often sudden and act as a response to an economic or monetary crisis. Second, dates of the termination of some liquidity providing programs sometimes overlap with extension or start of other asset purchasing programs. For instance, on June 2020 the Fed stopped supporting the repo market, which was an effect of the stress in that market that started on 17th September 2019, but was still buying securities on a massive scale under the QE4 program. These quantitative easing/tightening dates can be found in table \ref{table:fed} in the appendix.
+There are two reasons why adding those QT dates to the regression generates more noise in the model. First, quantitative tightening is a very careful and gradual process. This is contrary to announcements of QE programs, which are often sudden and act as a response to an economic or monetary crisis. Second, termination dates of some liquidity providing programs sometimes overlap with other fully-fledged security purchase programs that are in the still in progress. For instance, on June 2020 the Fed stopped supporting the repo market, which had begun as an effect of the stress in that market that started on 17th September 2019, but was still buying securities on a massive scale under the QE4 program. These quantitative easing/tightening dates can be found in table \ref{table:fed} in the appendix.
 
 % Regression table 1: GCF repo rate
 \begin{table}[!htbp] \centering
@@ -499,24 +541,17 @@ There are two reasons why adding those QT dates to the regression generates more
 \label{table:reg1}
 \end{table}
 
-Surprisingly, the reverse-repo standing facility had a large impact on the direction of the repo rate. It was expected to have some impact, but the magnitude of its effect is astonishing. A positive coefficient suggest that as more Treasuries are borrowed from the Fed (through a reverse repo contract), more useful collateral can be utilized by money market participants. This, in turn makes the desired collateral more plentiful, which pushes the repo rate up.
+Surprisingly, the reverse-repo standing facility had a large impact on the direction of the repo rate. It was expected to have some impact, but the magnitude of its effect is astonishing. A positive coefficient suggests that as more Treasuries are borrowed from the Fed (through a reverse repo contract), more useful collateral can be utilized by money market participants. This, in turn makes the desired collateral more plentiful, which pushes the repo rate up.
 
 Table \ref{table:reg2} presents the results of running the second model specification. It does not differ from the former one in a great extend. The only major difference is the dependent variable, which in this case in the US collateral spread. As described in section \ref{sec:unsecured}, this transformation of the dependent variable is a simple trick that allows to include the unsecured rate in the model.
 
-The interpretation of results in table \ref{table:reg2} is the opposite to those that are in the table \ref{table:reg1}. For example, the coefficient the variable that represents the size of SOMA holdings in the column two, which is 41.788, suggest that a \$1 trillion increase in Treasuries value at the Fed cause the collateral spread to widen by about 42 basis points. Considering, that the model controls for the LIBOR rate, we can say that the this effect is caused solely by an increasing repo rate. As the collateral spreads widens and the unsecured rate stays constant, the repo rate decreases. Hence, an opposite interpretation.
+The interpretation of results in table \ref{table:reg2} is the opposite to those that are in the table \ref{table:reg1}. For example, the coefficient the variable that represents the size of SOMA holdings in the column 2, which is 41.788, suggests that a \$1 trillion increase in Treasury securities on the Fed's balance sheet, causes the collateral spread to widen by about 42 basis points. Considering, that the model controls for the LIBOR rate, we can say that the this effect is caused solely by an increasing repo rate. As the collateral spreads widens and the unsecured rate stays constant, the repo rate decreases. Hence, an opposite interpretation.
 
 Analyzing the scarcity effects in relative terms of a collateral spread, and at the same time controlling for the price of liquidity in the unsecured market, allows to isolate and analyze the collateral-side of a repo contract. This method extracts the portion of a change in a repo rate that is associated only with the market conditions of the underlying security. The results are, however, roughly the same for both of regressions.
 
-There are a few other repo and collateral spread drives that are not included in this study. For example, haircut of the underlying security is not included because of the class of these assets (highest-quality) and the unavailability of the data. A liquidity metric of an underlying collateral is also not included because there is no metric that aggregates and provides information about the liquidity status of all securities\footnote{For instance, on-the run Treasuries are more liquid than off-the-run Treasuries. The same goes for securities with different maturities. T-bills are more liquid than T-bonds.}. I have tried out adding other regressors (that controled for liquidity, volatility, regulatory changes) and were plausible to considerably affect the final results, but none of those variables came out to be significant (see table \ref{table:reg3} in the appendix).
-
+There are a few other repo and collateral spread drivers that are not included in this study. For example, haircut of the underlying security is not included because of the class of these assets (highest-quality) and the unavailability of the data. A liquidity metric of an underlying collateral is also not included because there is no metric that aggregates and provides information about the liquidity status of all Treasury securities\footnote{For instance, on-the run Treasuries are more liquid than off-the-run Treasuries. The same goes for securities with different maturities. T-bills are more liquid than T-bonds.}. I have tried out adding other regressors (that controled for liquidity, volatility, regulatory changes) and were plausible to considerably affect the final result, but none of those variables came out to be statistically significant (see table \ref{table:reg3} in the appendix).
 
 Since September 2019 to the end of 2021, the Fed has purchased over \$2.5 trillion of Treasury securities from the secondary market. According to the results from table \ref{table:reg1} (column 2), this expansion of the central bank's balance sheet is associated with about 113 bps decrease in the repo rate over the whole period. At the same time the US Treasury Department, through its fiscal stimulus programs, was supplying Treasury securities to the market. Taking two effects into account, the supply factors contributed to about a 56 basis point decrease of the repo rate. There are also demand factors and other drivers of the GC Treasury repo rate that were included in this study. Nonetheless, I refrain from delving too much into interpretation of control variables as effect sizes of those additional variables very rarely have a casual interpretation \citet{hunermund2020}.
-
-% Second column of both regression sets 
-
-% effect of both debt and soma and rrp
-
-% effects of policy normalization 
 
 All regressions use Newey–West standard errors. The number of lags is equal to the closes integer of the fourth root of the number of observations (726), which is 5. Each variable, except categorical variables, is in the fist-difference form ($X_t-X_{t-1}$).
 
@@ -573,6 +608,7 @@ All regressions use Newey–West standard errors. The number of lags is equal to
 % ----- CONCLUSIONS ----- 
 \section{Conclusions} \label{sec:conclusion} 
 
+% effects of policy normalization 
 % \lipsum[1-8]
 
 % ----- APPENDIX (OPTIONAL) ----- 
