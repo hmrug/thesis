@@ -423,7 +423,6 @@ coll["sum"] = coll.iloc[:,0] + coll.iloc[:,1]
 
 # --- Figures --- 
 
-
 # dtcc = pd.read_csv("data/dtcc.csv",index_col="Date") / 1000000000
 # dtcc.index = pd.to_datetime(dtcc.index)
 # dtcc = dtcc.loc[:"2022-01-02"]
@@ -455,8 +454,19 @@ sns.despine()
 plt.tight_layout()
 f_1.savefig(fig_path+"main_vars.pdf")
 
+# All collateral - 2 banks
+f_3, ax = plt.subplots(1,1)
+ax.plot(coll)
+
+# RRP
+f_4, ax = plt.subplots(1,1)
+ax.set_xlim(dtt(2020,4,1),dtt(2022,1,1))
+ax.plot(df["RRP"])
 
 
-
+# RRP
+f_5, ax = plt.subplots(1,1)
+ax.set_xlim(dtt(2020,4,1),dtt(2022,1,1))
+ax.plot(df["RRP"])
 
 
