@@ -62,11 +62,10 @@ df = pd.read_csv("data/fetched_data.csv",
                  index_col="Date")
 df.index = pd.to_datetime(df.index)
 
-# VIX
-vix = pdr.DataReader('^VIX','yahoo',start_date,end_date)['Adj Close']\
-                .resample("W-WED").first()\
-                .rename("VIX")
-
+# VIX & MOVE
+vix = pdr.DataReader(['^VIX','^MOVE'],'yahoo',start_date,end_date)['Adj Close']\
+                .resample("W-WED").first()
+vix.columns = ["VIX","MOVE"]
 
 # RRP Rate (in bps)
 rrp_rate = pdr.DataReader('RRPONTSYAWARD','fred',start_date,end_date)\
@@ -244,20 +243,20 @@ spec12 = ols("REPO_TREASURY ~\
 res12 = spec12.summary()
 res12
 
-# 1_3: Add LIBOR
-spec13 = ols("REPO_TREASURY ~\
-                SOMA_TREASURY +\
-                DEBT +\
-                RRP +\
-                UST_1M +\
-                YIELD_CURVE +\
-                LIBOR +\
-                C(RATE_DOWN) +\
-                C(RATE_UP)",
-            data=ddf,missing='drop',hasconst=True)\
-                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
-res13 = spec13.summary()
-res13
+# # 1_3: Add LIBOR
+# spec13 = ols("REPO_TREASURY ~\
+#                 SOMA_TREASURY +\
+#                 DEBT +\
+#                 RRP +\
+#                 UST_1M +\
+#                 YIELD_CURVE +\
+#                 LIBOR +\
+#                 C(RATE_DOWN) +\
+#                 C(RATE_UP)",
+#             data=ddf,missing='drop',hasconst=True)\
+#                 .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
+# res13 = spec13.summary()
+# res13
 
 # 1_4: Add VIX and Fed dates
 spec14 = ols("REPO_TREASURY ~\
@@ -266,7 +265,6 @@ spec14 = ols("REPO_TREASURY ~\
                 RRP +\
                 UST_1M +\
                 YIELD_CURVE +\
-                LIBOR +\
                 VIX +\
                 C(RATE_DOWN) +\
                 C(RATE_UP) +\
@@ -293,13 +291,27 @@ spec22 = ols("COLLATERAL_SPREAD ~\
                 RRP +\
                 UST_1M +\
                 YIELD_CURVE +\
-                LIBOR +\
                 C(RATE_DOWN) +\
                 C(RATE_UP)",
             data=ddf,missing='drop',hasconst=True)\
                 .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
 res22 = spec22.summary()
 res22
+
+# 2_25: Add LIBOR
+spec225 = ols("COLLATERAL_SPREAD ~\
+                SOMA_TREASURY +\
+                DEBT +\
+                RRP +\
+                UST_1M +\
+                YIELD_CURVE +\
+                LIBOR +\
+                C(RATE_DOWN) +\
+                C(RATE_UP)",
+            data=ddf,missing='drop',hasconst=True)\
+                .fit(cov_type="HAC",cov_kwds={'maxlags': n_lag})
+res225 = spec225.summary()
+res225
 
 # 2_3: Add VIX and Fed dates
 spec23 = ols("COLLATERAL_SPREAD ~\
@@ -393,8 +405,8 @@ res5
 df[["RRP","UST_1M"]].corr()
 
 # Export results
-sg1 = Stargazer([spec11,spec12,spec13,spec14])
-sg2 = Stargazer([spec21,spec22,spec23])
+sg1 = Stargazer([spec11,spec12,spec14])
+sg2 = Stargazer([spec21,spec22,spec225,spec23])
 sg24 = Stargazer([spec24,spec25,spec26])
 
 with open(tab_path+'reg1.txt', 'w') as f:
@@ -457,16 +469,4 @@ f_1.savefig(fig_path+"main_vars.pdf")
 # All collateral - 2 banks
 f_3, ax = plt.subplots(1,1)
 ax.plot(coll)
-
-# RRP
-f_4, ax = plt.subplots(1,1)
-ax.set_xlim(dtt(2020,4,1),dtt(2022,1,1))
-ax.plot(df["RRP"])
-
-
-# RRP
-f_5, ax = plt.subplots(1,1)
-ax.set_xlim(dtt(2020,4,1),dtt(2022,1,1))
-ax.plot(df["RRP"])
-
 
