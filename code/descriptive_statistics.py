@@ -51,8 +51,8 @@ us10y =pdr.DataReader("DGS10","fred",start,end)\
 us_cpi = pdr.DataReader("CPIAUCSL","fred",start,end)\
         .pct_change(12)*100
 # UST Yields
-ust = pd.read_csv("https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/all/all?type=daily_treasury_yield_curve&field_tdr_date_value=all&page&_format=csv",
-                  index_col="Date")
+ust = pd.read_csv("https://home.treasury.gov/system/files/276/yield-curve-rates-1990-2021.csv",
+                  index_col="Date",storage_options=hdr).iloc[::-1]
 ust.index = pd.to_datetime(ust.index)
 # 4-week T-bill Yield
 tbill4w = pdr.DataReader("DTB4WK","fred",start,end)
@@ -78,6 +78,7 @@ dtcc_rates = dtcc.iloc[:,[1,3]].rename(
         dtcc.iloc[:,[1,3]].columns[1]: "GCF_TREASURY"
     },axis=1)
 dtcc = pd.concat([dtcc_hist_rates,dtcc_rates],axis=0)
+dtcc["Spread"] = dtcc["GCF_MBS"] - dtcc["GCF_TREASURY"]
 # Collateral allowed to be reused: JPM and GS
 coll = pd.read_excel("data/repledged.xlsx",
                           index_col="Date")
@@ -121,7 +122,7 @@ ax2.legend(["Yield on 10-year US Treasury (right)",
           frameon=False,ncol=2)
 ax.set_xlim(start,dtt(2022,2,1))
 ax2.set_xlim(start,dtt(2022,2,1))
-ax.text(x=0,y=-0.17,s='Source: FRED', transform=ax.transAxes)
+ax.text(x=0,y=-0.17,s='Source: Federal Reserve Economic Data', transform=ax.transAxes)
 plt.tight_layout()
 f_1.savefig(fig_path+"fed_bs.pdf")
 
@@ -140,7 +141,7 @@ ax.text(x=0,y=-0.17,transform=ax.transAxes,
         and the DTCC GCF Treasury Repo rate')
 sns.despine()
 plt.tight_layout()
-# f_2.savefig(fig_path+"collateral_spread.pdf")
+f_2.savefig(fig_path+"collateral_spread.pdf")
 
 ## Figure 3: Repo Rate and cash market rates
 f_3, ax = plt.subplots(2,1)
@@ -183,6 +184,21 @@ ax[0].text(x=-0.04,y=-0.17,transform=ax[0].transAxes,
 sns.despine()
 plt.tight_layout()
 f_4.savefig(fig_path+"rrp+coll.pdf")
+
+## Figure 5: GCF Repo MBS - Treasury Spread
+f_5, ax = plt.subplots(1,1)
+ax.xaxis.set_major_locator(mdates.MonthLocator(interval=6))
+ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
+ax.tick_params(axis='x', rotation=45)
+ax.plot(dtcc["Spread"]*100,c='k',lw=2)
+ax.set_ylabel("bps")
+ax.axhline(0,c='gray',ls='--')
+ax.set_xlim(dtt(2016,1,1),dtt(2022,1,1))
+ax.set_ylim(-75,71)
+ax.text(x=0,y=-0.17,s='Source: Depository Trust \& Clearing Corporation', transform=ax.transAxes)
+sns.despine()
+plt.tight_layout()
+f_5.savefig(fig_path+"gcf_spread.pdf")
 
 rrp_spread = pd.concat([tbill4w,rrp_rate],axis=1)
 rrp_spread = (rrp_spread["DTB4WK"] - rrp_spread["RRPONTSYAWARD"]).dropna()

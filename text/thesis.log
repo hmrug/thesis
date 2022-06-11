@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.25)  1 JUN 2022 10:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.25)  10 JUN 2022 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -839,7 +839,7 @@ LaTeX Info: Redefining \nameref on input line 163.
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
 
-<./style/uzh_logo_e_pos.pdf, id=56, 154.5775pt x 49.18375pt>
+<./style/uzh_logo_e_pos.pdf, id=20, 154.5775pt x 49.18375pt>
 File: ./style/uzh_logo_e_pos.pdf Graphic file (type pdf)
 <use ./style/uzh_logo_e_pos.pdf>
 Package pdftex.def Info: ./style/uzh_logo_e_pos.pdf  used on input line 166.
@@ -848,7 +848,7 @@ Package pdftex.def Info: ./style/uzh_logo_e_pos.pdf  used on input line 166.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./style/uzh_logo_e_pos.pdf
 >]
-<./../resources/figures//../../project_definition.pdf, id=68, page=1, 580.32808
+<./../resources/figures//../../project_definition.pdf, id=32, page=1, 580.32808
 pt x 827.49153pt>
 File: ./../resources/figures//../../project_definition.pdf Graphic file (type p
 df)
@@ -866,7 +866,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [1 <./../resources/figures//../../project_definition.pdf>]
-<./../resources/figures//../../project_definition.pdf, id=79, page=2, 580.32808
+<./../resources/figures//../../project_definition.pdf, id=43, page=2, 580.32808
 pt x 827.49153pt>
 File: ./../resources/figures//../../project_definition.pdf Graphic file (type p
 df)
@@ -884,7 +884,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2 <./../resources/figures//../../project_definition.pdf>]
-<./../resources/figures//../../project_definition.pdf, id=87, page=3, 580.32808
+<./../resources/figures//../../project_definition.pdf, id=51, page=3, 580.32808
 pt x 827.49153pt>
 File: ./../resources/figures//../../project_definition.pdf Graphic file (type p
 df)
@@ -902,7 +902,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3 <./../resources/figures//../../project_definition.pdf>]
-<./../resources/figures//../../project_definition.pdf, id=95, page=4, 580.32808
+<./../resources/figures//../../project_definition.pdf, id=59, page=4, 580.32808
 pt x 827.49153pt>
 File: ./../resources/figures//../../project_definition.pdf Graphic file (type p
 df)
@@ -910,17 +910,7 @@ df)
 Package pdftex.def Info: ./../resources/figures//../../project_definition.pdf ,
  page4 used on input line 193.
 (pdftex.def)             Requested size: 410.20518pt x 584.92204pt.
- [4 <./../resources/figures//../../project_definition.pdf>] [5] (./thesis.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
-
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+ [4 <./../resources/figures//../../project_definition.pdf>] [5] (./thesis.toc)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
@@ -937,16 +927,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[7] (./thesis.lot)
+ (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
@@ -959,7 +940,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8]
+[7]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 230
+.
+ (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 230
+.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Package natbib Warning: Citation `nyborg2015' on page 1 undefined on input line
+ 232.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -973,9 +969,33 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.235 T
+l.234 T
        here is one channel of quantitative easing that is rarely mentioned a...
 [1]
+
+Package natbib Warning: Citation `damico2014' on page 2 undefined on input line
+ 234.
+
+
+Package natbib Warning: Citation `arrata2018' on page 2 undefined on input line
+ 234.
+
+
+Package natbib Warning: Citation `nyborg2019b' on page 2 undefined on input lin
+e 236.
+
+
+Package natbib Warning: Citation `han2018' on page 2 undefined on input line 24
+4.
+
+
+Package natbib Warning: Citation `duffie1996' on page 2 undefined on input line
+ 246.
+
+
+Package natbib Warning: Citation `krishnamurthy2012' on page 2 undefined on inp
+ut line 246.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -985,13 +1005,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-<./../resources/figures//fed_bs.pdf, id=212, 1156.32pt x 650.43pt>
+
+Package natbib Warning: Citation `singh2011' on page 3 undefined on input line 
+248.
+
+
+Package natbib Warning: Citation `sissoko2020' on page 3 undefined on input lin
+e 248.
+
+
+Package natbib Warning: Citation `singh2012' on page 3 undefined on input line 
+248.
+
+
+Package natbib Warning: Citation `singh2017' on page 3 undefined on input line 
+248.
+
+
+Package natbib Warning: Citation `jank2021' on page 3 undefined on input line 2
+48.
+
+
+Package natbib Warning: Citation `gern2015' on page 3 undefined on input line 2
+50.
+
+<./../resources/figures//fed_bs.pdf, id=102, 1156.32pt x 650.43pt>
 File: ./../resources/figures//fed_bs.pdf Graphic file (type pdf)
 <use ./../resources/figures//fed_bs.pdf>
 Package pdftex.def Info: ./../resources/figures//fed_bs.pdf  used on input line
- 257.
+ 256.
 (pdftex.def)             Requested size: 472.21523pt x 265.61607pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1002,6 +1045,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3]
 
+Package natbib Warning: Citation `ofr2021' on page 4 undefined on input line 27
+2.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -1010,25 +1057,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [4 <./../resources/figures//fed_bs.pdf>]
-Underfull \hbox (badness 5374) in paragraph at lines 280--280
-[][][][]\OT1/cmr/m/n/9 \Fed Chair Pow-ell test-i-fies to House com-mit-tee" - Y
-ou-tube video (2:51:00 mark). URL: ht-
- []
+
+Package natbib Warning: Citation `singh2017' on page 5 undefined on input line 
+274.
 
 
-Package natbib Warning: Citation `alfonso2022' on page 5 undefined on input lin
-e 286.
+Package natbib Warning: Citation `infante202' on page 5 undefined on input line
+ 276.
 
 
-Package natbib Warning: Citation `gmn22' on page 5 undefined on input line 286.
-
-
-
-Package caption Warning: \label without proper reference on input line 306.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:rates' on page 5 undefined on input line 286.
+Package natbib Warning: Citation `singh 2020' on page 5 undefined on input line
+ 282.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1040,329 +1079,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
-Package natbib Warning: Citation `cipriani2022' on page 6 undefined on input li
-ne 294.
-
-
-Package natbib Warning: Citation `reuters2021' on page 6 undefined on input lin
-e 296.
-
-
-Package caption Warning: \label without proper reference on input line 306.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:rates' on page 6 undefined on input line 296.
-
-<./../resources/figures//rates.pdf, id=265, 1156.32pt x 650.43pt>
-File: ./../resources/figures//rates.pdf Graphic file (type pdf)
-<use ./../resources/figures//rates.pdf>
-Package pdftex.def Info: ./../resources/figures//rates.pdf  used on input line 
-304.
-(pdftex.def)             Requested size: 472.21523pt x 265.61607pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[6]
-
-Package caption Warning: \label without proper reference on input line 325.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:rrp+coll' on page 7 undefined on input line 311.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[7 <./../resources/figures//rates.pdf>]
-<./../resources/figures//rrp+coll.pdf, id=294, 1156.32pt x 650.43pt>
-File: ./../resources/figures//rrp+coll.pdf Graphic file (type pdf)
-<use ./../resources/figures//rrp+coll.pdf>
-Package pdftex.def Info: ./../resources/figures//rrp+coll.pdf  used on input li
-ne 323.
-(pdftex.def)             Requested size: 472.21523pt x 265.61607pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[8 <./../resources/figures//rrp+coll.pdf>]
-! Misplaced alignment tab character &.
-l.338 ...te data comes from The Depository Trust &
-                                                   Clearing Corporation (DTC...
-
-? 
-
-Package caption Warning: \label without proper reference on input line 410.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:vars' on page 9 undefined on input line 340.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[9]
-
-LaTeX Warning: Reference `table:dates' on page 10 undefined on input line 352.
-
-
-Package caption Warning: \label without proper reference on input line 410.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:vars' on page 10 undefined on input line 395.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[10]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[11]
-<./../resources/figures//main_vars.pdf, id=336, 1084.05pt x 735.70862pt>
-File: ./../resources/figures//main_vars.pdf Graphic file (type pdf)
-<use ./../resources/figures//main_vars.pdf>
-Package pdftex.def Info: ./../resources/figures//main_vars.pdf  used on input l
-ine 407.
-(pdftex.def)             Requested size: 472.21523pt x 320.4797pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[12]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[13 <./../resources/figures//main_vars.pdf>]
-
-Package natbib Warning: Citation `bartolini2011' on page 14 undefined on input 
-line 454.
-
-
-Package natbib Warning: Citation `schaffner2019' on page 14 undefined on input 
-line 463.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[14]
-
-Package natbib Warning: Citation `gmn22' on page 15 undefined on input line 469
-.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[15]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[17]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[18]
-
-LaTeX Warning: Reference `table:reg2' on page 19 undefined on input line 551.
-
-
-LaTeX Warning: Reference `table:reg2' on page 19 undefined on input line 553.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[19]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[20]
-
-Package natbib Warning: Citation `hunermund2020' on page 21 undefined on input 
-line 607.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[21]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[22]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[23]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[24] (./thesis.bbl
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[25])
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 728--729
-
- []
-
-
-Package natbib Warning: There were undefined citations.
-
-[27] (./thesis.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 75453E629D41C17D98D64C06ACF2FCAF;2068.
- ) 
+Package natbib Warning: Citation `duffie1996' on page 6 undefined on input line
+ 286.
+
+
+Package natbib Warning: Citation `fisher2004' on page 6 undefined on input line
+ 288.
+
+
+Package natbib Warning: Citation `king' on page 6 undefined on input line 290.
+
+)
+Runaway argument?
+{Explained in detail in section \ref {sec:shortage}. \par General col\ETC.
+! File ended while scanning use of \@footnotetext.
+<inserted text> 
+                \par 
+<*> thesis
+          
+? q
+OK, entering \batchmode...
+! Emergency stop.
+<*> thesis
+          
+*** (job aborted, no legal \end found)
+
+ 
 Here is how much of TeX's memory you used:
- 21221 strings out of 478238
- 359111 string characters out of 5850456
- 815656 words of memory out of 5000000
- 38972 multiletter control sequences out of 15000+600000
- 483721 words of font info for 81 fonts, out of 8000000 for 9000
+ 20982 strings out of 478238
+ 355256 string characters out of 5850456
+ 805656 words of memory out of 5000000
+ 38818 multiletter control sequences out of 15000+600000
+ 478429 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,18n,117p,1346b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss1
-2.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><
-/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texm
-f-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on thesis.pdf (36 pages, 2171397 bytes).
-PDF statistics:
- 582 PDF objects out of 1000 (max. 8388607)
- 483 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 72i,12n,117p,1774b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

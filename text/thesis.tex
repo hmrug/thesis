@@ -273,30 +273,75 @@ The market value of collateral is discounted with a "haircut", that after reduct
 
 The main players in the market for collateral are hedge funds, (securities lending) custodians, money market funds, dealers banks and central banks. Hedge funds and securities lenders provide collateral, which then goes through primary dealers to money market funds and commercial banks \citet{singh2017}.
 
-Primary dealers are especially important in the collateral intermediation network, because of their function as a liaison of government security flows. Direct access to a large pool of liquid government debt securities gives them a role of central redistributors of collateral that re-use it to meet demand of the financial system. \citet{infante2020} document that most collateral received is re-used, which indicates its wide circulation in the system.
+Primary dealers are especially important in the collateral intermediation network, because of their function as a liaison of government security flows. Direct access to a large pool of liquid government debt securities gives them a role of central redistributors of collateral that re-use it to meet demand of the financial system. \citet{infante202} document that most collateral received is re-used, which indicates its wide circulation in the system.
 
-\subsection{Repo contracts}
+\subsection{Collateral in repurchase agreements}
 
-% what is a repo contract
-% clearing
-% size
-% Fed / central banks OMO
+Repurchase (repo) agreements oblige one party to sell a fixed-income security to another party at a specified price and to repurchase it at a fixed future date. It can be viewed as a method of securing short-term funding by pledging a liquid security to a counterparty as collateral, or a way of obtaining a specific, or a certain type of, security. Repo and reverse-repo contracts are two sides of the same coin. A counterparty that at the side of a repo agreement engages in a so-called reverse-repo contract, meaning that if first buys the collateral and the re-sells it at a later date. A percentage per annum rate that represents a relative difference in a price that the buyer re-sells at the end of the contract and purchases at the beginning of it is a cost of a loan that is secured with the security that is being moved around, i.e the repo rate. The cost of a security purchased through a repo is usually lower than it's market value to account for credit and liquidity risk of collateral. The percentage discount that is applied to repo collateral is called haircut.
 
-\subsection{Collateral and the shadow banking system}
+The purpose of a repo or a reverse-repo transaction can be determined by the type of market in which it takes place. Usually, the bilateral repo market is a market for collateral and tri-party repo (TRP) and central counterparty (CCP) repo markets are markets for funding \citet{singh 2020}.
 
-% shadow banking is about creation of collateral and distribution of collateral
-% shadow banking and traditional banking
-% collateral reuse
-% collateral as money
-% collateral multiplier
-% collateral 
+The tri-party party repo market involves two parties that exchange cash and a security, and a clearing bank that facilitates settlement. The third party provides collateral services, which, inter alia, include custody, selection and payment, but it is not a principal in the transaction process. The clearing bank is merely an agent, which assists and ensures a correct execution of a repo contract. By contrast, in CCP-cleared repo agreements, the central counterparty acts as a principal and uses its own inventory to fill an order. Central clearing trades have a CCP as a direct counterparty to a client that wants to enter a repo (or reverse-repo) contract, and then also nets transactions between members in its CCP network on a multilateral basis. [A Map of Collateral Uses and Flows, Aguiar 2016]
 
-\subsection{The regulatory environment}
+Triparty repos are mostly used to finance general collateral, which is a basket of securities with a very similar repo rate. At the time of initiation, the party that receives collateral receives any security that is in the traded GC pool of securities, and returns any eligible GC security back at closing. It is not important what security is exchanged in the process, as long as its identification number can be found on the list of eligible securities. Bilateral repo contracts, on the contrary, exchange only one specific security that can't be replaced by any other substitute. Some of those repos trade "on special", which means that their repo rate is lower than the rate of the benchmark GC repo\footnote{General repo rate is sometimes also referred to as the highest bilateral repo rate of a specific type of security, e.g. US Treasury securities \citet{duffie1996}}.
 
-% Basel 3
-% SLR
-% ??
-% monetary policy and collateral 
+Special repos have lower rates because market participants put extra value on specific collateral, which is, mostly, a consequence of short selling. Selling a specific security must be followed by delivery of the exact security, and not a substitute. An example of traders that constantly short sell liquid bonds are dealers. As dealers are market markers, they are present on both sides of a trade, so each position that is taken by them must be financed and, ideally, hedged. When there is a seller for an old, off-the-run, Treasury security, a dealer will buy it but may have to wait some time until it finds a buyer for that security. To finance a long position in an old Treasury security, a dealer can "repo it out", and then the collateral goes from a Treasury seller through a dealer to a repo counterparty (that does the reverse-repo). The flow of funds goes in the opposite direction. To hedge potential changes in the value of that old Treasury, a dealer short sells an on-the-run Treasury\footnote{On-the-run Treasuries are used for hedging many kinds of fixed-income instruments. Those specific Treasury securities are short sold, because of their very high level of liquidity. Short-selling anything less liquid poses a risk of getting caught in a short squeeze.} security that has similar maturity \citet{fisher2004}. The position is then financed and hedged, but the security that was short sold must be delivered, so a dealer uses the cash obtained through the short sale and enters a reverse repurchase agreement to get a liquid, on-the-run security and then to deliver it. This way, a higher demand for a liquid Treasury security that can cover dealers' short positions pushes the repo rate down, and makes it special.
+
+Some collateral securities in bilateral repo trades are more valued than the rest, which makes their repo rates lower, but the same thing can be observed in the triparty general collateral market amongst different collateral baskets. For example, since the Global Financial Crisis of 2008 the EU repo market has been extremely fragmented according to the home country of collateral. \citet{king} examine centrally cleared repo data from the eurozone repo market and find that euro-denominated repos have shifted from being funding-driven to being collateral-driven. Around 2011-12, when euro sovereign debt markets were experiencing severe stress, the demand for German bonds increased, which resulted in a visible premia in the German SC repo market. Specialness premia were confined only to the German SC repo market until the introduction of PSPP (public sector purchase programme). In 2015, the German general collateral repo rate collapsed below the ECB deposit facility rate, suggesting scarcity of not only specific bonds but all German bunds in general. If the central bank deposit rate is higher than the GC repo rate, then the repo rate can't be driven purely by the yield on a short-term loan, as agents that want to only lend cash can simply allocate their money at the central bank and receive a higher reward. This is analogous to the situation that sometimes happens also in the US Treasury GC repo market where the GC rate is lower than the IORB rate and sometimes even the RRP reward rate\footnote{Explained in detail in section \ref{sec:shortage}}.
+
+General collateral rates are not only cash-driven but also partially collateral-driven. The most pronounced evidence comes from the euro-demominated repo marekts\footnote{Centally clearled repo rate for German debt collateral (both GC and SC) trades at about 20 basis point premium compared to the repo rate that is secured with the Euro debt collateral basket. Delayed daily data for Repo Funds Rates can be found on the MTS broker website: https://www.mtsmarkets.com/repofunds-rate}, but the same phenomenon exists in the US GC repo market. More precisely, the quality of collateral of US GC repos is evident in the General Collateral Financing market.
+
+% “preferred habitats”
+
+\subsection{The GCF repo market}
+
+The GCF Repo® Service is an US general collateral triparty repo market where contracts are anonymously negotiatied through interdealer brokers (IDBs) and settled with FICC (Fixed Income Clearing Corporation), which serves as the central counterparty.  It is used by securities dealers which are members of FICC's Government Securities Division (GSD) to trade baskets of securities with a generic CUSIP number. Each dealer trading GCF Repo must post collateral into a clearing fund, which allows waive margin requirements. GCF repos require no haircut. There are 9 different security classes that used as collateral \citet{gcf}. Eligible GC classes are composed of US Treasury securities, mortgage-backed securties and US agency securities.\footnote{During the time of The Federal Deposit Insurance Corporation’s Debt Guarantee Program, FDIC guaranteed corporate bonds were also an eligible collateral class.} At the end of each trading day, FICC nets dealers position for each collateral class and sends clearing instructions (with netted positions of each dealer) to a triparty clearing bank, which is either J.P. Morgan or Bank of New York Mellon. This leads to a close connection between the GCF repo and US triparty repo markets\footnote{For instance a certain class of collateral can be obtained in the GCF repo market and then rehypocated in the triparty repo market. This way the collateral can be smoothly moved on the books of the clearing house without the need to connect to the Fedwire.}.
+
+Presence of FICC as the central counterparty in each GCF repo settlement completely eliminates counterparty credit risk, and existence of the collateral fund eliminates margin requirements. Therefore, there should be difference in a repo rate of US Treasury collateral class and Fannie Mae/Freddie Mac MBS  collateral class. However, the repo rate of the former historically has traded 1-2 basis points lower than the the repo rate of the latter. 
+
+% Figure: GCF Spread
+\begin{figure}[htb!]
+  \begin{center}
+    \caption{GCF Spread}
+    \includegraphics[width=0.99\linewidth]{gcf_spread.pdf}
+  \end{center}
+  \label{fig:rates}
+\end{figure}
+
+Another thing that is very interesting about Treasury GCF repo is that it conveys supply and demand information about many Treasury securities across the whole maturity spectrum in one rate. It can be used to analyze Treasury securities as a class of fixed-income securities. \citet{krish} find evidence that investors value US Treausries more highly than other types of fixed-income instruments with a similar credit risk profice because Tresuries have superior safety and liquidity attributes. It can be said that as some securities are special within a certain class of securities, US Treasuries, collectively, are special within the wide spectrum of fixed-income security classes. The GCF Treasury repo rate provided by DTCC inter-dealer broker can show, then, how availability of US public collateral in the financial system affects the cost of that specific type of collateral in the \$12.5 trillion repo market \citep{sifma chartbook}.
+
+\subsection{Moneyness of high-quality collateral}
+
+
+% Table: Velocity of Money
+\begin{table}[!h] \centering
+\begin{threeparttable}
+\caption{Velocity of traditional money and collateral.}
+\begin{tabular}{l|cc}
+\toprule
+ Date & Velocity of M2 Money Stock & Velocity of Collateral \\
+\midrule
+  2007 & 1.98 & 3.0 \\
+  2008 & 1.90 & - \\
+  2009 & 1.72 & - \\
+  2010 & 1.75 & 2.5 \\
+  2011 & 1.69 & 2.5 \\
+  2012 & 1.62 & 2.2 \\
+  2013 & 1.57 & 2.1 \\
+  2014 & 1.54 & 2.0 \\
+  2015 & 1.51 & 1.9 \\
+  2016 & 1.45 & 1.8 \\
+  2017 & 1.43 & 2.0 \\
+  2018 & 1.46 & 2.2 \\
+  2019 & 1.44 & 2.2 \\
+  2020 & 1.19 & 2.3 \\
+  2021 & 1.12 & 2.1 \\
+\bottomrule
+\end{tabular}
+  Sources: Federal Reserve Economic Data (M2V) \& \citet{singh2022}. Velocity of Collateral is defined as the re-use rate of collateral, which is a ratio of all (including repledged, off-balance sheet) collateral to the source collateral that comes from hedge funds and securities lending. Detailed methodology and original, non-updated numbers can be found in \citet{singh2011b}.
+\label{table:velocity}
+\end{threeparttable}
+\end{table}
 
 \newpage
 
