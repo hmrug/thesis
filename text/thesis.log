@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.25)  10 JUN 2022 19:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.5.25)  27 JUN 2022 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -257,40 +257,245 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \xmathstrut@box=\box52
 \xmathstrut@dim=\dimen181
 )
+(/usr/share/texmf-dist/tex/latex/mathdesign/mathdesign.sty
+Package: mathdesign 2013/08/29 v2.31 Math Design Project
+
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdput/mdput.cfg)
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdput/mdput.sty
+Package: mdput 2013/08/29 v2.31 adobe utopia + mdput (Math Design Project)
+
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdfont.def
+File: mdfont.def 2013/08/29 v2.31 (Math Design Project)
+)
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdsffont.def
+File: mdsffont.def 2013/08/29 v2.31 (Math Design Project)
+
+
+LaTeX Info: Font shape OT1/phv/mc/n has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 53.
+
+
+LaTeX Info: Font shape OT1/phv/mc/sc has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 56.
+
+
+LaTeX Info: Font shape OT1/phv/mc/sl has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 59.
+
+
+LaTeX Info: Font shape OT1/phv/mc/it has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 79.
+
+
+LaTeX Info: Font shape T1/phv/mc/n has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 102.
+
+
+LaTeX Info: Font shape T1/phv/mc/sc has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 105.
+
+
+LaTeX Info: Font shape T1/phv/mc/sl has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 108.
+
+
+LaTeX Info: Font shape T1/phv/mc/it has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 128.
+
+
+LaTeX Info: Font shape OT1/uhv/mc/n has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 259.
+
+
+LaTeX Info: Font shape OT1/uhv/mc/sc has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 262.
+
+
+LaTeX Info: Font shape OT1/uhv/mc/sl has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 265.
+
+
+LaTeX Info: Font shape OT1/uhv/mc/it has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 268.
+
+
+LaTeX Info: Font shape T1/uhv/mc/n has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 313.
+
+
+LaTeX Info: Font shape T1/uhv/mc/sc has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 316.
+
+
+LaTeX Info: Font shape T1/uhv/mc/sl has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 319.
+
+
+LaTeX Info: Font shape T1/uhv/mc/it has incorrect series value `mc'.
+            It should not contain an `m'! Please correct it.
+            Found on input line 322.
+
+) (/usr/share/texmf-dist/tex/latex/mathdesign/mdttfont.def
+File: mdttfont.def 2013/08/29 v2.31 (Math Design Project)
+)
+\symmdcal=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `mdcal' in version `bold'
+(Font)                  OMS/mdput/m/n --> OMS/mdput/b/n on input line 97.
+\symmdscr=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `mdscr' in version `bold'
+(Font)                  OMS/mdput/m/n --> OMS/mdput/b/n on input line 103.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 109.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `normal'
+(Font)                  U/euf/m/n --> U/xmdeuf/m/n on input line 109.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/b/n --> U/xmdeuf/m/n on input line 109.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/xmdeuf/m/n --> U/xmdeuf/b/n on input line 110.
+LaTeX Info: Redefining \frak on input line 111.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/mdput/m/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/mdput/m/it on input line 122.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/mdput/m/n on input line 123.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/mdput/m/n on input line 124.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/mdput/b/n on input line 126.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/mdput/b/it on input line 127.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/mdput/b/n on input line 128.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/mdput/b/n on input line 129.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/mdput/m/n --> OT1/mdput/m/n on input line 131.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/mdput/b/n on input line 132.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/mdput/m/it on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 134.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 135.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/mdput/b/n --> OT1/mdput/b/n on input line 137.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/mdput/b/n on input line 138.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/mdput/b/it on input line 139.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/b/n on input line 140.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 141.
+\symlettersupright=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `lettersupright' in version `bold'
+(Font)                  OML/mdput/m/n --> OML/mdput/b/n on input line 144.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 145.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `normal'
+(Font)                  OMS/mdput/m/n --> OMS/mdput/m/n on input line 167.
+
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks26
+\XKV@tempa@toks=\toks27
+)
+\XKV@depth=\count299
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+LaTeX Font Info:    Trying to load font information for OT1+mdput on input line
+ 186.
+
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdput/ot1mdput.fd
+File: ot1mdput.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdput.
+)
+LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
+(Font)              scaled to size 10.29301pt on input line 186.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 449.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 450.
+Now handling font encoding MDA ...
+... no UTF-8 mapping file for font encoding MDA
+\symmathdesignA=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `mathdesignA' in version `bold'
+(Font)                  MDA/mdput/m/n --> MDA/mdput/b/n on input line 491.
+LaTeX Font Info:    Overwriting encoding scheme math defaults on input line 493
+.
+Now handling font encoding MDB ...
+... no UTF-8 mapping file for font encoding MDB
+\symmathdesignB=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `mathdesignB' in version `bold'
+(Font)                  MDB/mdput/m/n --> MDB/mdput/b/n on input line 498.
+LaTeX Info: Redefining \bold on input line 510.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 532.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 533.
+\rulethickness=\skip72
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+mdput on input line 
+112.
+
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdput/t1mdput.fd
+File: t1mdput.fd 2013/08/29 Fontinst v1.933 font definitions for T1/mdput.
+)
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 10.29301pt on input line 112.
+))
 (/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip72
-\bibsep=\skip73
+\bibhang=\skip73
+\bibsep=\skip74
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count299
+\c@NAT@ctr=\count300
 )
 (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count300
+\etb@tempcnta=\count301
 )
 (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks26
-\thm@bodyfont=\toks27
-\thm@headfont=\toks28
-\thm@notefont=\toks29
-\thm@headpunct=\toks30
-\thm@preskip=\skip74
-\thm@postskip=\skip75
-\thm@headsep=\skip76
-\dth@everypar=\toks31
+\thm@style=\toks28
+\thm@bodyfont=\toks29
+\thm@headfont=\toks30
+\thm@notefont=\toks31
+\thm@headpunct=\toks32
+\thm@preskip=\skip75
+\thm@postskip=\skip76
+\thm@headsep=\skip77
+\dth@everypar=\toks33
 )
 (/usr/share/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2020/08/01 v0.72
-\thmt@toks=\toks32
-\c@thmt@dummyctr=\count301
+\thmt@toks=\toks34
+\c@thmt@dummyctr=\count302
 
 (/usr/share/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2020/08/01 v0.72
 
 (/usr/share/texmf-dist/tex/latex/thmtools/parseargs.sty
 Package: parseargs 2020/08/01 v0.72
-\@parsespec=\toks33
+\@parsespec=\toks35
 ))
 (/usr/share/texmf-dist/tex/latex/thmtools/thm-kv.sty
 Package: thm-kv 2020/08/01 v0.72
@@ -315,7 +520,7 @@ Package: thm-restate 2020/08/01 v0.72
 )
 (/usr/share/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
 Package: thm-amsthm 2020/08/01 v0.72
-\thmt@style@headstyle=\toks34
+\thmt@style@headstyle=\toks36
 ))
 (/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
@@ -327,15 +532,15 @@ Package: expl3 2022-04-10 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count302
+\l__color_backend_stack_int=\count303
 \l__pdf_internal_box=\box53
 ))
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count303
-\l__lipsum_a_int=\count304
-\l__lipsum_b_int=\count305
+\g__lipsum_par_int=\count304
+\l__lipsum_a_int=\count305
+\l__lipsum_b_int=\count306
 
 (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (/usr/share/texmf-dist/tex/latex/datetime/datetime.sty
@@ -344,20 +549,6 @@ Package: datetime 2015/03/20 v2.60 Date Time Package
 (/usr/share/texmf-dist/tex/latex/fmtcount/fmtcount.sty
 Package: fmtcount 2020/01/30 v3.07
 
-(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
-
-(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks35
-\XKV@tempa@toks=\toks36
-)
-\XKV@depth=\count306
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
 (/usr/share/texmf-dist/tex/latex/fmtcount/fcprefix.sty
 Package: fcprefix 2012/09/28
 
@@ -547,8 +738,8 @@ Package: xparse 2022-01-12 L3 Experimental document command parser
 (/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \c@r@tfl@t=\count342
-\rotFPtop=\skip77
-\rotFPbot=\skip78
+\rotFPtop=\skip78
+\rotFPbot=\skip79
 \rot@float@box=\box57
 \rot@mess@toks=\toks40
 )
@@ -582,8 +773,8 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \ar@mcellbox=\box60
 \extrarowheight=\dimen258
 \NC@list=\toks43
-\extratabsurround=\skip79
-\backup@length=\skip80
+\extratabsurround=\skip80
+\backup@length=\skip81
 \ar@cellbox=\box61
 )
 (/usr/share/texmf-dist/tex/latex/tools/hhline.sty
@@ -702,7 +893,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip81
+\Hy@SectionHShift=\skip82
 )
 (/usr/share/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
@@ -733,28 +924,50 @@ Package: cellspace 2022/01/04 v1.9.0 Spacing table cells (JN)
 \cellspace@firstht=\dimen271
 \cellspace@lastdp=\dimen272
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 67.
- (./thesis.aux)
+Package hyperref Info: Option `colorlinks' set `false' on input line 68.
+ (./thesis.aux
+
+LaTeX Warning: Label `fig:rates' multiply defined.
+
+
+LaTeX Warning: Label `fig:rates@cref' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 163.
-LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 164.
+LaTeX Font Info:    Trying to load font information for MDA+cmr on input line 1
+64.
+ (/usr/share/texmf-dist/tex/latex/mathdesign/mdacmr.fd
+File: mdacmr.fd 
+)
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 164.
+LaTeX Font Info:    Trying to load font information for MDB+cmr on input line 1
+64.
+
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
+File: mdbcmr.fd 
+)
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 164.
+LaTeX Font Info:    ... okay on input line 164.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -790,6 +1003,14 @@ LaTeX Font Info:    ... okay on input line 163.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+
+Package mathdesign/mdput Warning: Package 'amssymb' shouldn't be used in conjon
+ction with package mdput, on input line 164.
+
+
+Package mathdesign/mdput Warning: Package 'amsfonts' shouldn't be used in conjo
+nction with package mdput, on input line 164.
+
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count358
@@ -818,7 +1039,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring OFF on input line 163.
+Package hyperref Info: Link coloring OFF on input line 164.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -831,30 +1052,42 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count365
 )
-LaTeX Info: Redefining \ref on input line 163.
-LaTeX Info: Redefining \pageref on input line 163.
-LaTeX Info: Redefining \nameref on input line 163.
+LaTeX Info: Redefining \ref on input line 164.
+LaTeX Info: Redefining \pageref on input line 164.
+LaTeX Info: Redefining \nameref on input line 164.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
 
-<./style/uzh_logo_e_pos.pdf, id=20, 154.5775pt x 49.18375pt>
+<./style/uzh_logo_e_pos.pdf, id=60, 154.5775pt x 49.18375pt>
 File: ./style/uzh_logo_e_pos.pdf Graphic file (type pdf)
 <use ./style/uzh_logo_e_pos.pdf>
-Package pdftex.def Info: ./style/uzh_logo_e_pos.pdf  used on input line 166.
+Package pdftex.def Info: ./style/uzh_logo_e_pos.pdf  used on input line 167.
 (pdftex.def)             Requested size: 154.5771pt x 49.18361pt.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 16.24324pt on input line 167.
+LaTeX Font Info:    Font shape `T1/mdput/m/fsc' will be
+(Font)              scaled to size 10.29301pt on input line 167.
+LaTeX Font Info:    Font shape `T1/mdput/m/fsc' will be
+(Font)              scaled to size 13.53603pt on input line 167.
+LaTeX Font Info:    Font shape `T1/mdput/m/fsc' will be
+(Font)              scaled to size 9.40002pt on input line 167.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./style/uzh_logo_e_pos.pdf
 >]
-<./../resources/figures//../../project_definition.pdf, id=32, page=1, 580.32808
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 13.53603pt on input line 172.
+LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
+(Font)              scaled to size 13.53603pt on input line 172.
+<./../resources/figures//../../project_definition.pdf, id=71, page=1, 580.32808
 pt x 827.49153pt>
 File: ./../resources/figures//../../project_definition.pdf Graphic file (type p
 df)
 <use ./../resources/figures//../../project_definition.pdf, page 1>
 Package pdftex.def Info: ./../resources/figures//../../project_definition.pdf ,
- page1 used on input line 175.
+ page1 used on input line 176.
 (pdftex.def)             Requested size: 410.20518pt x 584.92204pt.
 
 
@@ -866,13 +1099,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [1 <./../resources/figures//../../project_definition.pdf>]
-<./../resources/figures//../../project_definition.pdf, id=43, page=2, 580.32808
+<./../resources/figures//../../project_definition.pdf, id=81, page=2, 580.32808
 pt x 827.49153pt>
 File: ./../resources/figures//../../project_definition.pdf Graphic file (type p
 df)
 <use ./../resources/figures//../../project_definition.pdf, page 2>
 Package pdftex.def Info: ./../resources/figures//../../project_definition.pdf ,
- page2 used on input line 181.
+ page2 used on input line 182.
 (pdftex.def)             Requested size: 410.20518pt x 584.92204pt.
 
 
@@ -884,13 +1117,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2 <./../resources/figures//../../project_definition.pdf>]
-<./../resources/figures//../../project_definition.pdf, id=51, page=3, 580.32808
+<./../resources/figures//../../project_definition.pdf, id=89, page=3, 580.32808
 pt x 827.49153pt>
 File: ./../resources/figures//../../project_definition.pdf Graphic file (type p
 df)
 <use ./../resources/figures//../../project_definition.pdf, page 3>
 Package pdftex.def Info: ./../resources/figures//../../project_definition.pdf ,
- page3 used on input line 187.
+ page3 used on input line 188.
 (pdftex.def)             Requested size: 410.20518pt x 584.92204pt.
 
 
@@ -902,15 +1135,98 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3 <./../resources/figures//../../project_definition.pdf>]
-<./../resources/figures//../../project_definition.pdf, id=59, page=4, 580.32808
+<./../resources/figures//../../project_definition.pdf, id=97, page=4, 580.32808
 pt x 827.49153pt>
 File: ./../resources/figures//../../project_definition.pdf Graphic file (type p
 df)
 <use ./../resources/figures//../../project_definition.pdf, page 4>
 Package pdftex.def Info: ./../resources/figures//../../project_definition.pdf ,
- page4 used on input line 193.
+ page4 used on input line 194.
 (pdftex.def)             Requested size: 410.20518pt x 584.92204pt.
- [4 <./../resources/figures//../../project_definition.pdf>] [5] (./thesis.toc)
+ [4 <./../resources/figures//../../project_definition.pdf>] [5] (./thesis.toc
+LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
+(Font)              scaled to size 10.29301pt on input line 2.
+LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
+(Font)              scaled to size 7.52002pt on input line 4.
+LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
+(Font)              scaled to size 5.64001pt on input line 4.
+LaTeX Font Info:    Trying to load font information for OML+mdput on input line
+ 4.
+
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdput/omlmdput.fd
+File: omlmdput.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdput.
+)
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 10.29301pt on input line 4.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 7.52002pt on input line 4.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 5.64001pt on input line 4.
+LaTeX Font Info:    Trying to load font information for OMS+mdput on input line
+ 4.
+
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdput/omsmdput.fd
+File: omsmdput.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdput.
+)
+LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
+(Font)              scaled to size 10.29301pt on input line 4.
+LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
+(Font)              scaled to size 7.52002pt on input line 4.
+LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
+(Font)              scaled to size 5.64001pt on input line 4.
+LaTeX Font Info:    Trying to load font information for OMX+mdput on input line
+ 4.
+
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdput/omxmdput.fd
+File: omxmdput.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdput.
+)
+LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
+(Font)              scaled to size 10.29301pt on input line 4.
+LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
+(Font)              scaled to size 7.52002pt on input line 4.
+LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
+(Font)              scaled to size 5.64001pt on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
+(Font)              scaled to size 10.29301pt on input line 4.
+LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
+(Font)              scaled to size 7.52002pt on input line 4.
+LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
+(Font)              scaled to size 5.64001pt on input line 4.
+LaTeX Font Info:    Trying to load font information for MDA+mdput on input line
+ 4.
+
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdput/mdamdput.fd
+File: mdamdput.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdput.
+)
+LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
+(Font)              scaled to size 10.29301pt on input line 4.
+LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
+(Font)              scaled to size 7.52002pt on input line 4.
+LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
+(Font)              scaled to size 5.64001pt on input line 4.
+LaTeX Font Info:    Trying to load font information for MDB+mdput on input line
+ 4.
+
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdput/mdbmdput.fd
+File: mdbmdput.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdput.
+)
+LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
+(Font)              scaled to size 10.29301pt on input line 4.
+LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
+(Font)              scaled to size 7.52002pt on input line 4.
+LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
+(Font)              scaled to size 5.64001pt on input line 4.
+)
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
@@ -941,20 +1257,89 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 230
-.
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 230
-.
+LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
+(Font)              scaled to size 13.53603pt on input line 217.
+LaTeX Font Info:    Font shape `T1/mdput/b/it' will be
+(Font)              scaled to size 13.53603pt on input line 217.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 9.40002pt on input line 221.
+LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
+(Font)              scaled to size 9.40002pt on input line 221.
+LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
+(Font)              scaled to size 9.40002pt on input line 231.
+LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
+(Font)              scaled to size 6.58002pt on input line 231.
+LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
+(Font)              scaled to size 4.70001pt on input line 231.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 9.40002pt on input line 231.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 6.58002pt on input line 231.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 4.70001pt on input line 231.
+LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
+(Font)              scaled to size 9.40002pt on input line 231.
+LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
+(Font)              scaled to size 6.58002pt on input line 231.
+LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
+(Font)              scaled to size 4.70001pt on input line 231.
+LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
+(Font)              scaled to size 9.40002pt on input line 231.
+LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
+(Font)              scaled to size 6.58002pt on input line 231.
+LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
+(Font)              scaled to size 4.70001pt on input line 231.
+LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
+(Font)              scaled to size 9.40002pt on input line 231.
+LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
+(Font)              scaled to size 6.58002pt on input line 231.
+LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
+(Font)              scaled to size 4.70001pt on input line 231.
+LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
+(Font)              scaled to size 9.40002pt on input line 231.
+LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
+(Font)              scaled to size 6.58002pt on input line 231.
+LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
+(Font)              scaled to size 4.70001pt on input line 231.
+LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
+(Font)              scaled to size 9.40002pt on input line 231.
+LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
+(Font)              scaled to size 6.58002pt on input line 231.
+LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
+(Font)              scaled to size 4.70001pt on input line 231.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 6.58002pt on input line 231.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 8.46002pt on input line 231.
+LaTeX Font Info:    Font shape `OT1/mdput/m/n' will be
+(Font)              scaled to size 8.46002pt on input line 231.
+LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
+(Font)              scaled to size 8.46002pt on input line 231.
+LaTeX Font Info:    Font shape `OMS/mdput/m/n' will be
+(Font)              scaled to size 8.46002pt on input line 231.
+LaTeX Font Info:    Font shape `OMX/mdput/m/n' will be
+(Font)              scaled to size 8.46002pt on input line 231.
+LaTeX Font Info:    Font shape `OML/mdput/m/n' will be
+(Font)              scaled to size 8.46002pt on input line 231.
+LaTeX Font Info:    Font shape `MDA/mdput/m/n' will be
+(Font)              scaled to size 8.46002pt on input line 231.
+LaTeX Font Info:    Font shape `MDB/mdput/m/n' will be
+(Font)              scaled to size 8.46002pt on input line 231.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 5.64001pt on input line 231.
 
-(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+Overfull \hbox (0.31664pt too wide) in paragraph at lines 233--234
+\T1/mdput/m/n/10 those chan-nels fo-cus on pos-it-ive ef-fects of as-set pur-ch
+ases. Neg-at-ives are very rarely ana-lysed. []Nyborg[]
+ []
 
-Package natbib Warning: Citation `nyborg2015' on page 1 undefined on input line
- 232.
+LaTeX Font Info:    Trying to load font information for TS1+mdput on input line
+ 235.
+(/usr/share/texmf-dist/tex/latex/mathdesign/mdput/ts1mdput.fd
+File: ts1mdput.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdput.
+)
+LaTeX Font Info:    Font shape `TS1/mdput/m/n' will be
+(Font)              scaled to size 9.40002pt on input line 235.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -969,33 +1354,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.234 T
-       here is one channel of quantitative easing that is rarely mentioned a...
-[1]
-
-Package natbib Warning: Citation `damico2014' on page 2 undefined on input line
- 234.
-
-
-Package natbib Warning: Citation `arrata2018' on page 2 undefined on input line
- 234.
-
-
-Package natbib Warning: Citation `nyborg2019b' on page 2 undefined on input lin
-e 236.
-
-
-Package natbib Warning: Citation `han2018' on page 2 undefined on input line 24
-4.
-
-
-Package natbib Warning: Citation `duffie1996' on page 2 undefined on input line
- 246.
-
-
-Package natbib Warning: Citation `krishnamurthy2012' on page 2 undefined on inp
-ut line 246.
-
+l.236 
+       [1]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1005,36 +1365,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-
-Package natbib Warning: Citation `singh2011' on page 3 undefined on input line 
-248.
-
-
-Package natbib Warning: Citation `sissoko2020' on page 3 undefined on input lin
-e 248.
-
-
-Package natbib Warning: Citation `singh2012' on page 3 undefined on input line 
-248.
-
-
-Package natbib Warning: Citation `singh2017' on page 3 undefined on input line 
-248.
-
-
-Package natbib Warning: Citation `jank2021' on page 3 undefined on input line 2
-48.
-
-
-Package natbib Warning: Citation `gern2015' on page 3 undefined on input line 2
-50.
-
-<./../resources/figures//fed_bs.pdf, id=102, 1156.32pt x 650.43pt>
+<./../resources/figures//fed_bs.pdf, id=213, 1156.32pt x 650.43pt>
 File: ./../resources/figures//fed_bs.pdf Graphic file (type pdf)
 <use ./../resources/figures//fed_bs.pdf>
 Package pdftex.def Info: ./../resources/figures//fed_bs.pdf  used on input line
- 256.
+ 257.
 (pdftex.def)             Requested size: 472.21523pt x 265.61607pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1044,9 +1381,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [3]
-
-Package natbib Warning: Citation `ofr2021' on page 4 undefined on input line 27
-2.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 11.28003pt on input line 269.
+LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
+(Font)              scaled to size 11.28003pt on input line 269.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1058,16 +1396,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4 <./../resources/figures//fed_bs.pdf>]
 
-Package natbib Warning: Citation `singh2017' on page 5 undefined on input line 
-274.
+Package natbib Warning: Citation `infante2020' on page 5 undefined on input lin
+e 277.
 
 
-Package natbib Warning: Citation `infante202' on page 5 undefined on input line
- 276.
+Package natbib Warning: Citation `singh2020' on page 5 undefined on input line 
+283.
 
 
-Package natbib Warning: Citation `singh 2020' on page 5 undefined on input line
- 282.
+Package natbib Warning: Citation `aguiar2016' on page 5 undefined on input line
+ 285.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1079,38 +1417,470 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 
-Package natbib Warning: Citation `duffie1996' on page 6 undefined on input line
- 286.
+Package natbib Warning: Citation `fisher2002' on page 6 undefined on input line
+ 289.
 
 
-Package natbib Warning: Citation `fisher2004' on page 6 undefined on input line
- 288.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6]
+LaTeX Font Info:    Font shape `TS1/mdput/m/n' will be
+(Font)              scaled to size 5.64001pt on input line 299.
 
 
-Package natbib Warning: Citation `king' on page 6 undefined on input line 290.
+Package natbib Warning: Citation `dtcc2012' on page 7 undefined on input line 2
+99.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7]
+<./../resources/figures//gcf_spread.pdf, id=289, 1156.32pt x 650.43pt>
+File: ./../resources/figures//gcf_spread.pdf Graphic file (type pdf)
+<use ./../resources/figures//gcf_spread.pdf>
+Package pdftex.def Info: ./../resources/figures//gcf_spread.pdf  used on input 
+line 307.
+(pdftex.def)             Requested size: 472.21523pt x 265.61607pt.
+
+
+Package natbib Warning: Citation `sifma2022' on page 8 undefined on input line 
+312.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8 <./../resources/figures//gcf_spread.pdf>]
+
+Package natbib Warning: Citation `gorton2009' on page 9 undefined on input line
+ 318.
+
+
+Package natbib Warning: Citation `boe2014' on page 9 undefined on input line 32
+0.
+
+
+Package natbib Warning: Citation `badev2021' on page 9 undefined on input line 
+320.
+
+
+Package natbib Warning: Citation `claessens2012' on page 9 undefined on input l
+ine 322.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9]
+
+Package natbib Warning: Citation `aitken2010' on page 10 undefined on input lin
+e 324.
+
+
+Package natbib Warning: Citation `infante2020' on page 10 undefined on input li
+ne 324.
+
+
+Package natbib Warning: Citation `fuhrer2016' on page 10 undefined on input lin
+e 324.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
+[][][][]\T1/mdput/m/n/9 ^^PFed Chair Pow-ell test-i-fies to House com-mit-tee^^
+Q - You-tube video (2:51:00 mark). URL: ht-
+ []
+
+
+Overfull \hbox (3.52219pt too wide) in paragraph at lines 365--366
+\T1/mdput/m/n/10 There are pieces of evid-ence that the QE4 pro-gram, ini-ti-at
+ed by the Fed as a re-sponse to the coronavirus
+ []
+
+
+Package caption Warning: \label without proper reference on input line 377.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:rates' on page 11 undefined on input line 371.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11]
+
+Package caption Warning: \label without proper reference on input line 377.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:rates' on page 12 undefined on input line 381.
+
+<./../resources/figures//rates.pdf, id=352, 1156.32pt x 650.43pt>
+File: ./../resources/figures//rates.pdf Graphic file (type pdf)
+<use ./../resources/figures//rates.pdf>
+Package pdftex.def Info: ./../resources/figures//rates.pdf  used on input line 
+389.
+(pdftex.def)             Requested size: 472.21523pt x 265.61607pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12]
+
+Package caption Warning: \label without proper reference on input line 396.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:rrp+coll' on page 13 undefined on input line 396.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[13 <./../resources/figures//rates.pdf>]
+<./../resources/figures//rrp+coll.pdf, id=383, 1156.32pt x 650.43pt>
+File: ./../resources/figures//rrp+coll.pdf Graphic file (type pdf)
+<use ./../resources/figures//rrp+coll.pdf>
+Package pdftex.def Info: ./../resources/figures//rrp+coll.pdf  used on input li
+ne 408.
+(pdftex.def)             Requested size: 472.21523pt x 265.61607pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[14 <./../resources/figures//rrp+coll.pdf>]
+
+Package caption Warning: \label without proper reference on input line 480.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:vars' on page 15 undefined on input line 425.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[15]
+
+LaTeX Warning: Reference `table:dates' on page 16 undefined on input line 437.
+
+
+Package caption Warning: \label without proper reference on input line 480.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:vars' on page 16 undefined on input line 480.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[16]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[17]
+<./../resources/figures//main_vars.pdf, id=425, 1084.05pt x 735.70862pt>
+File: ./../resources/figures//main_vars.pdf Graphic file (type pdf)
+<use ./../resources/figures//main_vars.pdf>
+Package pdftex.def Info: ./../resources/figures//main_vars.pdf  used on input l
+ine 492.
+(pdftex.def)             Requested size: 472.21523pt x 320.4797pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[18 <./../resources/figures//main_vars.pdf>]
+LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
+(Font)              scaled to size 9.40002pt on input line 532.
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 4.70001pt on input line 532.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[19]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[20]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[21]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[22]
+LaTeX Font Info:    Font shape `T1/mdput/m/it' will be
+(Font)              scaled to size 10.29301pt on input line 587.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[23]
+
+LaTeX Warning: Reference `table:reg2' on page 24 undefined on input line 634.
+
+
+LaTeX Warning: Reference `table:reg2' on page 24 undefined on input line 636.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[24]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[25]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[26]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[27]
+LaTeX Font Info:    Font shape `T1/mdput/m/n' will be
+(Font)              scaled to size 19.49565pt on input line 714.
+LaTeX Font Info:    Font shape `T1/mdput/b/n' will be
+(Font)              scaled to size 19.49565pt on input line 714.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[28]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[29] (./thesis.bbl
+LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
+(Font)              scaled to size 10.70007pt on input line 14.
+
+Underfull \hbox (badness 1057) in paragraph at lines 33--41
+[]\T1/mdput/m/n/10 L. Bar-to-lini, S. Hilton, S. Sundaresan, and C. Tonetti.  C
+ol-lat-eral val-ues by as-set class: Evid-
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 33--41
+\T1/mdput/m/n/10 ence from primary se-cur-it-ies deal-ers.  \T1/mdput/m/it/10 R
+e-view of Fin-an-cial Stud-ies\T1/mdput/m/n/10 , 24(1):248--278, 2011.
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 158--163
+[]\T1/mdput/m/n/10 Reuters.  Fed-backed libor re-place-ment sofr holds at lower
+ level amid cash de-luge,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--163
+\T1/mdput/m/n/10 treas-ur-ies volat-il-ity, Oc-to-ber 2021.  URL []$\T1/cmtt/m/
+n/10 https : / / www . reuters . com / article /
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[31])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 811--812
+
+ []
+
+
+Package natbib Warning: There were undefined citations.
+
+[33] (./thesis.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
 
 )
-Runaway argument?
-{Explained in detail in section \ref {sec:shortage}. \par General col\ETC.
-! File ended while scanning use of \@footnotetext.
-<inserted text> 
-                \par 
-<*> thesis
-          
-? q
-OK, entering \batchmode...
-! Emergency stop.
-<*> thesis
-          
-*** (job aborted, no legal \end found)
 
- 
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 3FA9FAB92ACDE209095EE73BD83AAFCA;2323
+(rerunfilecheck)             After:  2F277F68369F958EF15DE215BA50D3F0;2288.
+ ) 
 Here is how much of TeX's memory you used:
- 20982 strings out of 478238
- 355256 string characters out of 5850456
- 805656 words of memory out of 5000000
- 38818 multiletter control sequences out of 15000+600000
- 478429 words of font info for 62 fonts, out of 8000000 for 9000
+ 22681 strings out of 478238
+ 381446 string characters out of 5850456
+ 818982 words of memory out of 5000000
+ 40306 multiletter control sequences out of 15000+600000
+ 700176 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,12n,117p,1774b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 72i,18n,117p,1774b,549s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
+exmf-dist/fonts/enc/dvips/ly1/texnansi.enc}</usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts
+/type1/public/mathdesign/mdput/md-utb8t.pfb></usr/share/texmf-dist/fonts/type1/
+public/mathdesign/mdput/md-utr7m.pfb></usr/share/texmf-dist/fonts/type1/public/
+mathdesign/mdput/md-utr7t.pfb></usr/share/texmf-dist/fonts/type1/public/mathdes
+ign/mdput/md-utr7y.pfb></usr/share/texmf-dist/fonts/type1/public/mathdesign/mdp
+ut/md-utr8t.pfb></usr/share/texmf-dist/fonts/type1/public/mathdesign/mdput/md-u
+tri7m.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/shar
+e/texmf-dist/fonts/type1/adobe/utopia/putbi8a.pfb></usr/share/texmf-dist/fonts/
+type1/adobe/utopia/putr8a.pfb></usr/share/texmf-dist/fonts/type1/adobe/utopia/p
+utri8a.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on thesis.pdf (41 pages, 2107928 bytes).
+PDF statistics:
+ 685 PDF objects out of 1000 (max. 8388607)
+ 594 compressed objects within 6 object streams
+ 133 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+

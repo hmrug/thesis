@@ -1,0 +1,16 @@
+\babel@toc {british}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {section}{\numberline {2}Mechanics of collateral}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Market for collateral}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Collateral in repurchase agreements}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}The GCF repo market}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Money qualities of collateral}{9}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Collateral shortage in years 2020-2022}{11}{section.3}%
+\contentsline {section}{\numberline {4}Empirical tests}{15}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Data}{15}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Descriptive Statistics}{16}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Base regression specification}{19}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Problem with the unsecured rate}{20}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Results}{22}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Conclusions}{27}{section.5}%
+\contentsline {section}{Appendix}{}{section*.22}

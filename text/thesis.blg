@@ -1,51 +1,65 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2022/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 The style file: abbrvnat.bst
 Database file #1: refs.bib
+Warning--empty journal in alfonso2022
+Warning--empty journal in badev2021
+Warning--there's a number but no volume in badev2021
+Warning--empty institution in dtcc2012
+Warning--empty journal in gorton2009
+Warning--there's a number but no volume in gorton2009
+Warning--empty journal in jank2021
+Warning--there's a number but no volume in jank2021
 Warning--empty journal in nyborg2015
 Warning--there's a number but no volume in nyborg2015
+Warning--empty institution in sifma2022
+Warning--empty year in singh2022
+Warning--empty year in singh2022
+Warning--there's a number but no volume in singh2011b
+Warning--empty journal in singh2017
+Warning--there's a number but no volume in singh2017
 Warning--there's a number but no volume in singh2011
 Warning--there's a number but no volume in singh2012
-You've used 15 entries,
+You've used 37 entries,
             2773 wiz_defined-function locations,
-            696 strings with 7092 characters,
-and the built_in function-call counts, 6013 in all, are:
-= -- 549
-> -- 323
-< -- 13
-+ -- 111
-- -- 96
-* -- 484
-:= -- 983
-add.period$ -- 61
-call.type$ -- 15
-change.case$ -- 77
-chr.to.int$ -- 15
-cite$ -- 34
-duplicate$ -- 285
-empty$ -- 474
-format.name$ -- 121
-if$ -- 1232
+            833 strings with 11146 characters,
+and the built_in function-call counts, 15040 in all, are:
+= -- 1348
+> -- 859
+< -- 27
++ -- 295
+- -- 258
+* -- 1246
+:= -- 2433
+add.period$ -- 146
+call.type$ -- 37
+change.case$ -- 198
+chr.to.int$ -- 37
+cite$ -- 92
+duplicate$ -- 689
+empty$ -- 1177
+format.name$ -- 313
+if$ -- 3077
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 99
-num.names$ -- 60
-pop$ -- 125
+missing$ -- 27
+newline$ -- 228
+num.names$ -- 148
+pop$ -- 358
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 160
 quote$ -- 0
-skip$ -- 208
+skip$ -- 505
 stack$ -- 0
-substring$ -- 102
-swap$ -- 20
-text.length$ -- 3
+substring$ -- 246
+swap$ -- 51
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 165
-warning$ -- 4
-while$ -- 49
+type$ -- 402
+warning$ -- 18
+while$ -- 121
 width$ -- 0
-write$ -- 228
-(There were 4 warnings)
+write$ -- 536
+(There were 18 warnings)

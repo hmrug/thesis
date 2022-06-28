@@ -1,9 +1,30 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Afonso et~al.(2022)Afonso, Logan, Martin, Riordan, and
+  Zobel]{alfonso2022}
+G.~Afonso, L.~Logan, A.~Martin, W.~Riordan, and P.~Zobel.
+\newblock How the fed’s overnight reverse repo facility works.
+\newblock January 2022.
+\newblock URL
+  \url{https://libertystreeteconomics.newyorkfed.org/2022/1/how-the-feds-overnight-reverse-repo-facility-works}.
+
+\bibitem[Aguiar et~al.(2016)Aguiar, Kennett, Bookstaber, and Wipf]{aguiar2016}
+A.~Aguiar, D.~Kennett, R.~Bookstaber, and T.~Wipf.
+\newblock A map of collateral uses and flows.
+\newblock Working Papers 16-06, Office of Financial Research, US Department of
+  the Treasury, 2016.
+\newblock URL \url{https://EconPapers.repec.org/RePEc:ofr:wpaper:16-06}.
+
+\bibitem[Aitken and Singh(2010)]{aitken2010}
+J.~Aitken and M.~M. Singh.
+\newblock {The (Sizable) Role of Rehypothecation in the Shadow Banking System}.
+\newblock IMF Working Papers 2010/172, International Monetary Fund, July 2010.
+\newblock URL \url{https://ideas.repec.org/p/imf/imfwpa/2010-172.html}.
 
 \bibitem[Arrata et~al.(2018)Arrata, Nguyen, Rahmouni-Rousseau, and
   Vari]{arrata2018}
@@ -12,6 +33,39 @@ W.~Arrata, B.~Nguyen, I.~Rahmouni-Rousseau, and M.~Vari.
 \newblock \emph{{IMF} Working Papers}, 18\penalty0 (258):\penalty0 1, 2018.
 \newblock \doi{10.5089/9781484386910.001}.
 \newblock URL \url{https://doi.org/10.5089/9781484386910.001}.
+
+\bibitem[Badev et~al.(2021)Badev, Clark, Ebanks, Marquardt, and
+  Mills]{badev2021}
+A.~Badev, L.~Clark, D.~Ebanks, J.~C. Marquardt, and D.~C. Mills.
+\newblock {Fedwire Funds Service: Payments, Balances, and Available Liquidity}.
+\newblock \penalty0 (2021-070), Nov. 2021.
+\newblock \doi{10.17016/FEDS.2021.070}.
+\newblock URL \url{https://ideas.repec.org/p/fip/fedgfe/2021-70.html}.
+
+\bibitem[Bartolini et~al.(2011)Bartolini, Hilton, Sundaresan, and
+  Tonetti]{bartolini2011}
+L.~Bartolini, S.~Hilton, S.~Sundaresan, and C.~Tonetti.
+\newblock Collateral values by asset class: Evidence from primary securities
+  dealers.
+\newblock \emph{Review of Financial Studies}, 24\penalty0 (1):\penalty0
+  248--278, 2011.
+\newblock \doi{https://doi.org/10.1093/rfs/hhq108}.
+\newblock URL
+  \url{https://ideas.repec.org/a/oup/rfinst/v24y2011i1p248-278.html}.
+
+\bibitem[Cipriani et~al.(2022)Cipriani, Clouse, Logan, Martin, and
+  Riordan]{cipriani2022}
+M.~Cipriani, J.~Clouse, L.~Logan, A.~Martin, and W.~Riordan.
+\newblock The fed’s balance sheet runoff and the on rrp facility, April 2022.
+\newblock URL
+  \url{https://libertystreeteconomics.newyorkfed.org/2022/04/the-feds-balance-sheet-runoff-and-the-on-rrp-facility}.
+
+\bibitem[Claessens et~al.(2012)Claessens, Ratnovski, and Singh]{claessens2012}
+M.~S. Claessens, M.~L. Ratnovski, and M.~M. Singh.
+\newblock {Shadow Banking: Economics and Policy}.
+\newblock IMF Staff Discussion Notes 2012/012, International Monetary Fund,
+  Dec. 2012.
+\newblock URL \url{https://ideas.repec.org/p/imf/imfsdn/2012-012.html}.
 
 \bibitem[D{\textquotesingle}Amico et~al.(2014)D{\textquotesingle}Amico, Fan,
   and Kitsul]{damico2014}
@@ -29,10 +83,31 @@ F.~De~Fiore, M.~Hoerova, and H.~Uhlig.
   2018.
 \newblock URL \url{http://www.nber.org/papers/w25319}.
 
+\bibitem[DTCC(2012)]{dtcc2012}
+DTCC.
+\newblock Dtcc gcf repo index.
+\newblock Technical report, Oct. 2012.
+\newblock URL
+  \url{https://www.dtcc.com/-/media/Files/PDFs/charts/About_GCF_Repo_Booklet_1_14.pdf}.
+
 \bibitem[Duffie(1996)]{duffie1996}
 D.~Duffie.
 \newblock Special repo rates.
 \newblock \emph{Journal of Finance}, 51\penalty0 (2):\penalty0 493--526, 1996.
+
+\bibitem[Fisher(2002)]{fisher2002}
+M.~Fisher.
+\newblock {Special repo rates: an introduction}.
+\newblock \emph{Economic Review}, 87\penalty0 (Q2):\penalty0 27--43, 2002.
+\newblock URL
+  \url{https://ideas.repec.org/a/fip/fedaer/y2002iq2p27-43nv.87no.2.html}.
+
+\bibitem[FUHRER et~al.(2016)FUHRER, GUGGENHEIM, and SCHUMACHER]{fuhrer2016}
+L.~M. FUHRER, B.~GUGGENHEIM, and S.~SCHUMACHER.
+\newblock Re-use of collateral in the repo market.
+\newblock \emph{Journal of Money, Credit and Banking}, 48\penalty0
+  (6):\penalty0 1169--1193, 2016.
+\newblock URL \url{http://www.jstor.org/stable/43862648}.
 
 \bibitem[Gern et~al.(2015)Gern, Jannsen, Kooths, and Wolters]{gern2015}
 K.-J. Gern, N.~Jannsen, S.~Kooths, and M.~Wolters.
@@ -42,6 +117,13 @@ K.-J. Gern, N.~Jannsen, S.~Kooths, and M.~Wolters.
   2015.
 \newblock \doi{https://doi.org/10.1007/s10272-015-0543-1}.
 
+\bibitem[Gorton and Metrick(2009)]{gorton2009}
+G.~B. Gorton and A.~Metrick.
+\newblock Securitized banking and the run on repo.
+\newblock \penalty0 (15223), August 2009.
+\newblock \doi{10.3386/w15223}.
+\newblock URL \url{http://www.nber.org/papers/w15223}.
+
 \bibitem[Han and Seneviratne(2018)]{han2018}
 F.~Han and D.~Seneviratne.
 \newblock Scarcity effects of quantitative easing on market liquidity: Evidence
@@ -50,10 +132,30 @@ F.~Han and D.~Seneviratne.
 \newblock \doi{10.2139/ssrn.3221269}.
 \newblock URL \url{https://doi.org/10.2139/ssrn.3221269}.
 
+\bibitem[Hempel and Kahn(2021)]{ofr2021}
+S.~J. Hempel and R.~J. Kahn.
+\newblock Negative rates in bilateral repo markets.
+\newblock Technical Report 21-03), Federal Reserve Bank of New York, September
+  2021.
+\newblock URL
+  \url{https://www.financialresearch.gov/briefs/2021/09/27/negative-rates-in-bilateral-repo-markets/}.
+
+\bibitem[Hünermund and Louw(2020)]{hunermund2020}
+P.~Hünermund and B.~Louw.
+\newblock On the nuisance of control variables in regression analysis, 2020.
+\newblock URL \url{https://arxiv.org/abs/2005.10314}.
+
+\bibitem[Infante et~al.(2020)Infante, Press, and Saravay]{infante2020}
+S.~Infante, C.~Press, and Z.~Saravay.
+\newblock Understanding collateral re-use in the us financial system.
+\newblock \emph{AEA Papers and Proceedings}, 110:\penalty0 482--86, May 2020.
+\newblock \doi{10.1257/pandp.20201099}.
+\newblock URL \url{https://www.aeaweb.org/articles?id=10.1257/pandp.20201099}.
+
 \bibitem[Jank et~al.(2021)Jank, Mönch, and Schneider]{jank2021}
 S.~Jank, E.~Mönch, and M.~Schneider.
 \newblock {Safe asset shortage and collateral reuse}.
-\newblock Discussion Papers 39/2021, Deutsche Bundesbank, Aug. 2021.
+\newblock \penalty0 (39/2021), Aug. 2021.
 \newblock URL \url{https://ideas.repec.org/p/zbw/bubdps/392021.html}.
 
 \bibitem[Krishnamurthy and Vissing-Jorgensen(2012)]{krishnamurthy2012}
@@ -62,6 +164,13 @@ A.~Krishnamurthy and A.~Vissing-Jorgensen.
 \newblock \emph{Journal of Political Economy}, 120\penalty0 (2):\penalty0
   233--267, 2012.
 \newblock \doi{10.1086/666526}.
+
+\bibitem[McLeay et~al.(2014)McLeay, Radia, and Thomas]{boe2014}
+M.~McLeay, A.~Radia, and R.~Thomas.
+\newblock {Money creation in the modern economy}.
+\newblock \emph{Bank of England Quarterly Bulletin}, 54\penalty0 (1):\penalty0
+  14--27, 2014.
+\newblock URL \url{https://ideas.repec.org/a/boe/qbullt/0128.html}.
 
 \bibitem[Nyborg(2015)]{nyborg2015}
 K.~G. Nyborg.
@@ -83,21 +192,63 @@ K.~G. Nyborg and C.~R\"{o}sler.
 \newblock \doi{10.2139/ssrn.3335201}.
 \newblock URL \url{https://doi.org/10.2139/ssrn.3335201}.
 
-\bibitem[Singh and Pozsar(2012)]{singh2011}
+\bibitem[Pozsar(2019)]{gmn22}
+Z.~Pozsar.
+\newblock Global money notes \#22, May 2019.
+
+\bibitem[Reuters(2021)]{reuters2021}
+Reuters.
+\newblock Fed-backed libor replacement sofr holds at lower level amid cash
+  deluge, treasuries volatility, October 2021.
+\newblock URL
+  \url{https://www.reuters.com/article/usa-bonds-sofr-idUSKBN2HB2PZ}.
+
+\bibitem[Schaffner et~al.(2019)Schaffner, Ranaldo, and
+  Tsatsaronis]{schaffner2019}
+P.~Schaffner, A.~Ranaldo, and K.~Tsatsaronis.
+\newblock {Euro repo market functioning: collateral is king}.
+\newblock \emph{BIS Quarterly Review}, December 2019.
+\newblock URL \url{https://ideas.repec.org/a/bis/bisqtr/1912k.html}.
+
+\bibitem[SIFMA(2022)]{sifma2022}
+SIFMA.
+\newblock The us repo markets: A chart book.
+\newblock Technical report, February 2022.
+\newblock URL
+  \url{https://www.sifma.org/resources/research/us-repo-market-chart-book/}.
+
+\bibitem[Singh()]{singh2022}
+M.~Singh.
+\newblock We need new financial pipes.
+\newblock \emph{FT Alphaville}.
+\newblock URL
+  \url{https://www.ft.com/content/cfb38f8b-6a38-4f29-bb31-c07dddeab0e3}.
+
+\bibitem[Singh(2011)]{singh2011b}
+M.~Singh.
+\newblock Velocity of pledged collateral : Analysis and implications.
+\newblock \emph{IMF Working Paper}, \penalty0 (11/256), Nov. 2011.
+
+\bibitem[Singh(2017)]{singh2017}
+M.~Singh.
+\newblock {Collateral Reuse and Balance Sheet Space}.
+\newblock \penalty0 (2017/113), May 2017.
+\newblock URL \url{https://ideas.repec.org/p/imf/imfwpa/2017-113.html}.
+
+\bibitem[Singh(2020)]{singh2020}
+M.~Singh.
+\newblock \emph{Collateral Markets and Financial Plumbing}.
+\newblock Risk.net, Mar. 2020.
+
+\bibitem[Singh and Pozsar(2011)]{singh2011}
 M.~Singh and Z.~Pozsar.
 \newblock The nonbank-bank nexus and the shadow banking system.
-\newblock \emph{IMF Working Paper}, \penalty0 (11/289), 2012.
+\newblock \emph{IMF Working Paper}, \penalty0 (11/289), Dec. 2011.
 
 \bibitem[Singh and Stella(2012)]{singh2012}
 M.~Singh and P.~Stella.
 \newblock Money and collateral.
 \newblock \emph{IMF Working Paper}, \penalty0 (12/95), 2012.
-
-\bibitem[Singh(2017)]{singh2017}
-M.~M. Singh.
-\newblock {Collateral Reuse and Balance Sheet Space}.
-\newblock IMF Working Papers 2017/113, International Monetary Fund, May 2017.
-\newblock URL \url{https://ideas.repec.org/p/imf/imfwpa/2017-113.html}.
 
 \bibitem[Sissoko(2020)]{sissoko2020}
 C.~Sissoko.
