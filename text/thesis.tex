@@ -49,6 +49,7 @@
 \usepackage{cleveref} %For the command \cref, load after hyperref.
 \usepackage{makecell}
 \usepackage{cellspace}
+
 \setlength\cellspacetoplimit{4pt}
 \setlength\cellspacebottomlimit{4pt}
 
@@ -132,7 +133,7 @@ Supervisor\\
 Assistant\\
 {\Large Benjamin Schneider \par}
 \vfill
-{\scshape Date of Submission: \textcolor{red}{DRAFT}} \\[0.3\baselineskip] % 18.05.2022
+{\scshape Date of Submission: 18.07.2022} \\[0.3\baselineskip] % 18.05.2022
 \endgroup}
 
 % ----- SPECIAL HEADER AND FOOTER STYLE  ----- 
@@ -208,7 +209,7 @@ This research uses the Treasury General Collateral Financing (GCF) repo rate and
 
 A shortage of Treasury collateral, when present, can be noticed also in other metrics. 2021 was a year of a substantial shortage of liquid Treasury bill collateral, when the effects of fiscal stimulus were winding down, but the Fed was still very active in the market. Evidence that suggest such phenomenon were severely depressed T-bill, and repo rates compared to the interest that could be gained by allocating money on the Fed's balance sheet.
 
-Last but not least, financial money market collateral, and its scarcity, is important not only from the perspective of properly functioning markets for collateral and liquidity, but also the shadow banking credit creation channel and so the real economy. Increased collateral scarcity most likely incentives dealers to increase leverage by raising re-use of collateral. Higher leverage increases systemic credit risk, but limited re-use may impede facilitation of credit by the shadow banking system and thus negatively affect economic growth when both collateral, and its re-use rate, is being suppressed.
+Last but not least, money market collateral, and its scarcity, is important not only from the perspective of properly functioning markets for collateral and liquidity, but also the shadow banking credit creation channel and so the real economy. Increased collateral scarcity most likely incentives dealers to increase leverage by raising re-use of collateral. Higher leverage increases systemic credit risk, but limited re-use may impede facilitation of credit by the shadow banking system and thus negatively affect economic growth when both collateral, and its re-use rate, is being suppressed.
 \newpage
 \tableofcontents
 \newpage
@@ -260,7 +261,7 @@ Investigating scarcity effects of unconventional monetary policy is important be
 % Figure: Fed's BS
 \begin{figure}[htb!]
   \begin{center}
-    \caption{The long-term rate has been very low in spite of massive QE}
+    \caption{The long-term rate and the Fed's balance sheet.}
     \label{Feds_BS}
     \includegraphics[width=0.99\linewidth]{fed_bs.pdf}
   \end{center}
@@ -273,7 +274,7 @@ The remainder of the paper is organized as follows. Section \ref{sec:mechanics} 
 % ----- COLLATERAL MECHANICS ----- 
 \section{Mechanics of collateral} \label{sec:mechanics}
 
-\subsection{Market for collateral}
+\subsection{Markets for collateral}
 
 Collateral intermediation is facilitated primarily through three kinds of transactions: repo contracts, securities lending and over-the-counter derivative positions. Each of these ways of pledging/obtaining collateral is different\footnote{The biggest difference between those instruments, from a point-of-view of the party that receives collateral, is the balance sheet cost of that collateral that is associated with each type of transaction.}, but have one thing in common, which is financial intermediation. Whether the final goal of the counterparty is to secure short-term funding, borrow a security or open a synthetic position, it cannot be easily done without pledging a liquid financial asset in exchange. For this reason, collateral is sometimes referred to as lubrication of the global financial plumbing.
 
@@ -310,7 +311,7 @@ Presence of FICC as the central counterparty, in each GCF repo settlement, compl
 % Figure: GCF Spread
 \begin{figure}[htb!]
   \begin{center}
-    \caption{GCF Spread}
+    \caption{The GCF Spread: MBS GCF repo rate less Treasury GCF repo rate.}
     \label{fig:rates}
     \includegraphics[width=0.99\linewidth]{gcf_spread.pdf}
   \end{center}
@@ -318,7 +319,7 @@ Presence of FICC as the central counterparty, in each GCF repo settlement, compl
 
 Another thing that is very interesting about Treasury GCF repo is that it conveys supply and demand information about many Treasury securities across the whole maturity spectrum in one rate. It can be used to analyze Treasury securities as a class of fixed-income securities. \citet{krishnamurthy2012} find evidence that investors value US Treasuries more highly than other types of fixed-income instruments with a similar credit risk profile, because Treasuries have superior safety and liquidity attributes. It can be said, that as some securities are special within a certain class of securities, US Treasuries, collectively, are special within the wide spectrum of fixed-income security classes. The GCF Treasury repo rate provided by DTCC inter-dealer broker shows, then, not only the price of an overnight secured loan, but also market conditions of the most important type of collateral in the global financial system. The size of the US Treasury GCF repo market is estimated to be around \$12.5 trillion \citep{sifma2022}.
 
-\subsection{Shadow banking and collateral}
+\subsection{Collateral and the shadow banking system}
 
 Prolonged systemic central bank purchases of high-quality government debt securities may lead to increased scarcity of those securities, which should be clearly visible in repo markets. However, what, then, makes collateral scarcity an important phenomenon?
 
@@ -392,7 +393,7 @@ Given all the information above, the most likely scenario is that depressed Trea
 % Figure: Rates
 \begin{figure}[htb!]
   \begin{center}
-    \caption{Rates}
+    \caption{Short-term Treasury rates and the Fed's "floor rates".}
     \label{fig:rates}
     \includegraphics[width=0.99\linewidth]{rates.pdf}
   \end{center}
@@ -409,7 +410,7 @@ This section does not prove that scarcity effects exist, but shows how a prolong
 % Figure: RRP and GS collateral
 \begin{figure}[htb!]
   \begin{center}
-  \caption{RRP, GS Coll}
+  \caption{The Fed's reverse-repo facility volume and Goldman Sachs' collateral.}
   \label{fig:rrp+coll}
     \includegraphics[width=0.99\linewidth]{rrp+coll.pdf}
   \end{center}
@@ -443,9 +444,8 @@ Lastly, there are four categorical variables used to control for changes in the 
 
 % Table: Variables
 \begin{sidewaystable}[htbp!] \centering
-\caption{Explanation of variables.\\
+  \caption{Data definitions and sources.}
 \label{table:variables}
-  All data was accessed and transformed on 10th March 2022.}
 {\renewcommand{\arraystretch}{2.2} 
 \begin{tabular}{lll}
 \toprule
@@ -472,9 +472,9 @@ Lastly, there are four categorical variables used to control for changes in the 
   PD FAILS & \makecell[l]{Repo fails to receive and fails to deliver, US Treasury\\securities, Primary Dealer Statistics, in tril USD} & www.newyorkfed.org \\
   \bottomrule
 \end{tabular}}
-% \begin{flushleft}
-% \hspace{35pt}\textit{* .}
-% \end{flushleft}
+\begin{flushleft}
+  \hspace{50pt} \textit{All data was accessed and transformed on 10th March 2022.}
+\end{flushleft}
 \end{sidewaystable}
 
 The time range of the whole data set\footnote{Except primary dealer statistics data that is used in one regression shown in the appendix.} goes from January 2, 2008, to December 29, 2021. All data has weekly frequency, Wednesday levels. Dollar values are in trillion USD, rate values are in basis points (bps). Table \ref{table:stats} shows descriptive statistics of the data used in regression analysis. All of the data, except the LIBOR rate, comes from free online resources. More details can be found in table \ref{table:variables}.
@@ -493,7 +493,7 @@ The standing reverse-repo facility was opened for the first time in September 20
 % Figure: Main variables
 \begin{figure}[htb!]
   \begin{center}
-    \caption{Development of primary variables.}
+    \caption{Development of primary regression variables.}
     \label{fig:vars}
     \includegraphics[width=0.99\linewidth]{main_vars.pdf}
   \end{center}
@@ -650,7 +650,7 @@ The interpretation of results in table \ref{table:reg2} is the opposite to those
 
 % Regression table 2: Collateral spread
 \begin{table}[!htbp] \centering
-\caption{Regrression --- Measuring scarcity effects with collateral spread}
+\caption{Regression --- Adjusting for the unsecured rate.}
 \label{table:reg2}
 \begin{tabular}{@{\extracolsep{5pt}}lcccc}
 \\[-1.8ex]\hline
@@ -732,10 +732,12 @@ Over the last decade the Fed has become an important force in Treasury markets. 
 \begin{appendices}
 % \section{Tables}
 
+  Below is the table that shows dates when the Fed communicated, initiated or expanded quantitative easing/tightening policies. These dates are used as dummy variables (\textit{FED EASING} or \textit{FED TIGHTENING}) in OLS regressions that were presented in the main section.
+
 % Table: Fed Dates
 \begin{table}[!h] \centering
 \begin{threeparttable}
-\caption{Fed Dates.}
+\caption{The Fed's quantitative easing and tightening dates.}
 \label{table:fed}
 \begin{tabular}{lll}
 \toprule
@@ -763,6 +765,8 @@ Date & Variable & Event \\
 Observations from January 2, 2008 to January 5, 2022 (except the last variable which data starts from April 3, 2013). The data above is not transformed, however, regressions in the following section apply first-differencing.
 \end{threeparttable}
 \end{table}
+
+  The following table (\ref{table:reg3}) shows the base regression with Treasury GCF repo rate as the dependent variable with a few additional controls that turned out to be statistically insignificant. Both volatility and liquidity (bid-ask spread) should significantly affect the collateral spread \citep{nyborg2019a}. However, in this study, volatility and liquidity variables are not significant most likely due to the frequency of the data, which may be be too low (weekly). Another problem is that the volatility can be defined and computed in many different ways. Here, I use the standard deviation of over 10 latest data points. With daily time-series data, 10 weeks of observations would mean 50 data points, whereas in with weekly data, there are only a few data points. Both volatility and illiquidity were expected to be positively associated with the repo rate.
 
 % Regression table 3: Collateral spread, additional variables NEW
 \begin{table}[!htbp] \centering
@@ -815,6 +819,8 @@ Variable "UST 3M BID-ASK" is the bid-ask spread of a generic 3-month Treasury bi
   \textit{Notes: Collateral spread is defined as the difference between USD ON LIBOR rate and ON GCF Treasury repo rate. All variables, except categorical "C" ones, are in first-difference form. Standard errors are heteroscedasticity and autocorrelation robust (HAC) using 5 lags and without small sample correction (in parentheses). All other variables are defined in table \ref{table:variables}.}
 \end{flushleft}
 \end{table}
+
+Primary dealer repo fails variable should reflect stress in markets for collateral. A high number of fails was expected to be negatively associated with the repo rate as fails to deliver or receive should indicate higher searching cost of collateral. Repo fails may have a higher explanatory power when tested against special repo rates.
 
 \end{appendices}
 
