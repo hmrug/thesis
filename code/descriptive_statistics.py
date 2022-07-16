@@ -152,7 +152,7 @@ for i in range(2):
     ax[i].xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
 ax[0].plot(iorb_plus.interpolate(),c='gray',ls="-.",alpha=0.9)
 ax[0].plot(rrp_rate.interpolate(),c='gray',ls="--",alpha=0.9)
-ax[0].plot(dtcc,c='k',lw=2)
+ax[0].plot(dtcc["GCF_TREASURY"],c='k',lw=2)
 ax[1].plot(iorb_plus.interpolate(),c='gray',ls="-.",alpha=0.9)
 ax[1].plot(rrp_rate.interpolate(),c='gray',ls="--",alpha=0.9)
 ax[1].plot(tbill4w.interpolate(),c='k',lw=2)
